@@ -20,6 +20,7 @@ function initializeFacebookPixelOnConfirmPage() {
       s.parentNode.insertBefore(t, s);
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
     fbq("init", fbp);
+    fbq("track", "Lead");
     fbq("track", "PageView");
   }
 }

@@ -92,6 +92,7 @@ $("#register_form").submit((event) => {
   message += "ФИО: <b>" + form[0].value + "</b>\n";
   message += "Номер телефона: <b>" + form[1].value + "</b>\n";
   message += "Tg username: <b>" + form[2].value + "</b>\n";
+  message += "Url: <b>" + referrer + "</b>\n";
 
   const params = getQueryParams();
   message += getParamString(params);
