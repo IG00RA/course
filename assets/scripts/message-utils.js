@@ -136,7 +136,7 @@ function getParamString(queryParams) {
 }
 
 function sendMessage(message, isRedirect = false) {
-  fetch(`http://${BACK_HOST}:${BACK_PORT}/api/send-message`, {
+  fetch(`https://${BACK_HOST}/api/send-message`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -167,7 +167,7 @@ function sendMessage(message, isRedirect = false) {
 }
 
 function sendToGoogleScript(data) {
-  fetch(`http://${BACK_HOST}:${BACK_PORT}/api/send-to-google-script`, {
+  fetch(`https://${BACK_HOST}/api/send-to-google-script`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

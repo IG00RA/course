@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
+    <!-- Обов'язкові метатеги -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Mustage course</title>
+    <!-- Назва сторінки -->
+    <title>Mustage course - Навчись арбітражу трафіку</title>
 
-    <link rel="icon" href="favicon.svg" />
+    <!-- Мета опис для пошукових систем -->
+    <meta
+      name="description"
+      content="Безкоштовний курс з арбітражу трафіку з практичним досвідом, підтримкою експертів та можливістю потрапити в команду Mustage Friends."
+    />
+    <meta
+      name="keywords"
+      content="Mustage course, арбітраж трафіку, гембл, безкоштовний курс, навчання, арбітраж, Mustage Friends, маркетинг, інтернет-реклама"
+    />
+    <!-- Інструкція для роботів-пошуковиків -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Facebook та інші соцмережі) -->
+    <meta property="og:image" content="/assets/seo/opengraph-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mustage course - Навчись арбітражу трафіку" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mustage course - Навчись арбітражу трафіку" />
+    <meta
+      name="twitter:description"
+      content="Приєднуйся до безкоштовного курсу з арбітражу трафіку та стань частиною команди Mustage Friends!."
+    />
+    <meta name="twitter:image" content="/assets/seo/opengraph-image.png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <meta name="twitter:image:alt" content="Mustage course - Навчись арбітражу трафіку" />
+    <!-- Фавікон -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
+    <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/seo/apple-touch-icon.png" sizes="180x180" />
+
+    <link rel="manifest" href="/assets/seo/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Підключення шрифтів -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Підключення іконок -->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+
+    <!-- Підключення основного CSS -->
     <link rel="stylesheet" href="index.css" />
+
+    <!-- Підключення скриптів -->
     <script src="./assets/scripts/facebook-utils.js"></script>
     <noscript></noscript>
   </head>
@@ -54,7 +101,7 @@
 
             <button class="button button__rounded" onclick="redirectToChatClick();">
               <span data-i18n="header.write_to_us">Написати нам</span>
-              <img src="./assets/icons/paper-plane.svg" alt="Paper plane icon" width="38px" height="38px" />
+              <img src="./assets/icons/paper-plane.svg" alt="Paper plane icon" style="width: 38px; height: 38px" />
             </button>
           </div>
 
@@ -122,12 +169,7 @@
           </div>
         </div>
         <div class="header__image-container">
-          <img
-            class="header__image"
-            src="./assets/images/4de0a600-457d-4945-9f0a-57c716f037bc 1.webp"
-            alt="Header image"
-            loading="lazy"
-          />
+          <img class="header__image" src="./assets/images/4de0a600.webp" alt="Header image" loading="lazy" />
         </div>
 
         <div id="menu" class="header__menu">
@@ -154,7 +196,7 @@
 
             <button class="button button__rounded" onclick="redirectToChatClick();">
               <span data-i18n="header.write_to_us">Написати нам</span>
-              <img src="./assets/icons/paper-plane.svg" alt="Paper plane icon" width="38px" height="38px" />
+              <img src="./assets/icons/paper-plane.svg" alt="Paper plane icon" style="width: 38px; height: 38px" />
             </button>
           </div>
 
@@ -331,7 +373,7 @@
 
               <div class="privilege__step-list">
                 <div class="privilege__step">
-                  <img class="privilege__arrow" src="./assets/images/Vector 2.svg" alt="Left arrow" />
+                  <img class="privilege__arrow" src="./assets/images/Vector2.svg" alt="Left arrow" />
                   <div class="privilege__card privilege__card--outline">
                     <span class="text-headline-3" data-i18n="privilege.step1.title">1. Шлях спроб та помилок </span>
                     <span class="text-body-3" data-i18n="privilege.step1.description">
@@ -342,11 +384,11 @@
                 </div>
 
                 <div class="privilege__step">
-                  <img class="privilege__arrow" src="./assets/images/Vector 3.svg" alt="Right arrow" />
+                  <img class="privilege__arrow" src="./assets/images/Vector3.svg" alt="Right arrow" />
                   <div class="relative privilege__card privilege__card--primary">
                     <div class="privilege__top-change privilege__mark">
                       <span class="text-body-3" data-i18n="privilege.top"> ТОП вибір </span>
-                      <img src="./assets/icons/shines.svg" alt="Shiens" width="24px" height="24px" />
+                      <img src="./assets/icons/shines.svg" alt="Shiens" style="width: 24px; height: 24px" />
                     </div>
 
                     <span class="text-headline-3" data-i18n="privilege.step2.title">2. Вигідне готове рішення </span>
@@ -415,7 +457,7 @@
 
                 <div class="calculate__list-item">
                   <div class="calculate__pill">
-                    <img class="calculate__icon" src="./assets/icons/logo_square 1.svg" alt="Spay icon" />
+                    <img class="calculate__icon" src="./assets/icons/logo_square1.svg" alt="Spay icon" />
                     <span class="text-headline-3" data-i18n="calculate.spay"> Спай </span>
                   </div>
                   <span class="text-headline-3">$ 70</span>
@@ -458,11 +500,11 @@
                 <span class="text-body-2 text-bold text-underline">Можлива оплата частинами</span>
 
                 <div class="part-pay__icons">
-                  <img class="part-pay__icon" src="./assets/icons/Frame 294.svg" alt="Privat bank" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 292.svg" alt="Monobank" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 293.svg" alt="A bank" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 295.svg" alt="OTP" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 296.svg" alt="Image" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame294.svg" alt="Privat bank" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame292.svg" alt="Monobank" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame293.svg" alt="A bank" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame295.svg" alt="OTP" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame296.svg" alt="Image" />
                 </div>
               </div>
             </div>
@@ -513,7 +555,7 @@
                     src="./assets/icons/project-management.svg"
                     alt="Project management icon"
                   />
-                  <span class="text-body-3 text-medium">
+                  <div class="text-body-3 text-medium">
                     <span data-i18n="experience.have.title">Маємо все необхідне для успішного заливу:</span>
                     <ul>
                       <li data-i18n="experience.have.shop">шоп з акаунтами FB, за яким стоїть цілий фарм відділ</li>
@@ -525,7 +567,7 @@
                         внутрішні продукти автоматизації, баїнгу та розробки.
                       </li>
                     </ul>
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -546,10 +588,10 @@
 
               <div class="experience__general-panel-action">
                 <button class="button button__secondary" onclick="redirectToBotClick();">
-                  <div class="row row__align-center gap-8">
+                  <span class="row row__align-center gap-8">
                     <strong data-i18n="experience.join">Хочу приєднатись</strong>
                     <i class="fi fi-sm fi-sr-arrow-right"></i>
-                  </div>
+                  </span>
                 </button>
               </div>
             </div>
@@ -708,7 +750,7 @@
                 <div class="column column__right">
                   <img
                     class="audience__card-image"
-                    src="./assets/images/DRIP_13 (1).webp"
+                    src="./assets/images/DRIP_13(1).webp"
                     alt="To the young and ambitious image"
                   />
                 </div>
@@ -798,10 +840,10 @@
             <span class="text-headline-1" data-i18n="warning.title">Але легко не буде:</span>
 
             <div class="warning__content">
-              <dix class="column column__center" style="max-width: 975px">
+              <div class="column column__center" style="max-width: 975px">
                 <span class="text-headline-2" data-i18n="warning.subtitle.start">ми не про «золоті гори», </span>
                 <span class="text-headline-2" data-i18n="warning.subtitle.end">по-швидкому зрубити бабла не вийде</span>
-              </dix>
+              </div>
 
               <div class="column gap-24" style="max-width: 928px">
                 <span class="text-body-1" data-i18n="warning.description_p1">
@@ -1468,7 +1510,7 @@
                 </div>
                 <a
                   class="button button__secondary row__center"
-                  href="http://t.me/mustage_manager"
+                  href="http://t.me/mustage_manager_support"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1508,7 +1550,7 @@
 
                 <a
                   class="button button__secondary row__center"
-                  href="http://t.me/mustage_manager"
+                  href="http://t.me/mustage_manager_support"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1545,7 +1587,7 @@
 
                 <a
                   class="button button__secondary row__center"
-                  href="http://t.me/mustage_manager"
+                  href="http://t.me/mustage_manager_support"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1579,7 +1621,7 @@
 
                 <a
                   class="button button__secondary row__center"
-                  href="http://t.me/mustage_manager"
+                  href="http://t.me/mustage_manager_support"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1593,11 +1635,11 @@
                 <span class="text-body-2 text-bold text-underline">Можлива оплата частинами</span>
 
                 <div class="part-pay__icons">
-                  <img class="part-pay__icon" src="./assets/icons/Frame 294.svg" alt="Privat bank" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 292.svg" alt="Monobank" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 293.svg" alt="A bank" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 295.svg" alt="OTP" />
-                  <img class="part-pay__icon" src="./assets/icons/Frame 296.svg" alt="Image" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame294.svg" alt="Privat bank" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame292.svg" alt="Monobank" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame293.svg" alt="A bank" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame295.svg" alt="OTP" />
+                  <img class="part-pay__icon" src="./assets/icons/Frame296.svg" alt="Image" />
                 </div>
               </div>
             </div>
@@ -1625,14 +1667,16 @@
                       <span data-i18n="turkey"> Турція </span>
                     </span>
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span> 31 рега/7 депов
+                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span>
+                      31 рега/7 депов
                     </span>
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span> 23%
+                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span>
+                      23%
                     </span>
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.period">Період заливу:</span> 11.04.2024 -
-                      26.04.2024
+                      <span class="text-bold" data-i18n="students_result.period">Період заливу:</span>
+                      11.04.2024 - 26.04.2024
                     </span>
 
                     <img class="student__card-image" src="./assets/images/result_1.webp" alt="Turkey result" />
@@ -1649,16 +1693,18 @@
                     </span>
 
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span> 25 рег/5 депов
+                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span>
+                      25 рег/5 депов
                     </span>
 
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span> 20%
+                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span>
+                      20%
                     </span>
 
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.period">Період заливу:</span> 20.07.2024 -
-                      30.07.2024
+                      <span class="text-bold" data-i18n="students_result.period">Період заливу:</span>
+                      20.07.2024 - 30.07.2024
                     </span>
 
                     <img class="student__card-image" src="./assets/images/result_2.webp" alt="Chile result" />
@@ -1675,11 +1721,13 @@
                     </span>
 
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span> 113 рега/12 депов
+                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span>
+                      113 рега/12 депов
                     </span>
 
                     <span class="text-body-3">
-                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span> 11%
+                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span>
+                      11%
                     </span>
 
                     <span class="text-body-3">
@@ -1763,7 +1811,7 @@
 
                 <div id="modal" class="modal">
                   <span class="modal__close">&times;</span>
-                  <img class="modal_content" id="modal-img" alt="Image" />
+                  <img class="modal_content" id="modal-img" src="/assets/icons/arrow-right.svg" alt="Image" />
                 </div>
               </div>
 
@@ -1968,7 +2016,7 @@
                   <span class="text-headline-3 text-center" data-i18n="register.form_title">Форма</span>
                   <div class="divider"></div>
                   <div data-i18n="errorMessages.sendError" id="form-error" class="error-message">
-                    Помилка під час відправки форми, зверніться до сапорта @mustage_manager
+                    Помилка під час відправки форми, зверніться до сапорта @mustage_manager_support
                   </div>
 
                   <div class="column gap-8">
@@ -2032,15 +2080,15 @@
               </form>
 
               <div class="register__social">
-                <a href="https://t.me/mustage_channel" alt="Telegram">
+                <a href="https://t.me/mustage_channel">
                   <img class="icon-lg" src="./assets/icons/telegram.svg" alt="Telegram" />
                 </a>
 
-                <a href="https://www.youtube.com/@usaffiliate" alt="Youtube">
+                <a href="https://www.youtube.com/@usaffiliate">
                   <img class="icon-lg" src="./assets/icons/youtube.svg" alt="Youtube" />
                 </a>
 
-                <a href="https://www.tiktok.com/@mustage.io" alt="Tiktok">
+                <a href="https://www.tiktok.com/@mustage.io">
                   <img class="icon-lg" src="./assets/icons/tiktok.svg" alt="Tiktok" />
                 </a>
               </div>
@@ -2059,11 +2107,11 @@
         <div class="footer__content">
           <div class="column justify-content-between gap-24">
             <div class="column gap-24" style="align-items: flex-start">
-              <img src="./assets/images/logo.svg" width="208px" height="56px" alt="Mustage logo" />
+              <img src="./assets/images/logo.svg" style="width: 208px; height: 56px" alt="Mustage logo" />
 
               <button class="button button__rounded" onclick="redirectToChatClick();">
                 <span data-i18n="header.write_to_us">Написать нам</span>
-                <img src="./assets/icons/paper-plane.svg" alt="Paper plane icon" width="38px" height="38px" />
+                <img src="./assets/icons/paper-plane.svg" alt="Paper plane icon" style="width: 38px; height: 38px" />
               </button>
             </div>
 
@@ -2095,15 +2143,15 @@
 
         <div class="footer__social">
           <div class="footer__social-content">
-            <a href="https://t.me/mustage_channel" alt="Telegram">
+            <a href="https://t.me/mustage_channel">
               <img class="icon-lg" src="./assets/icons/telegram.svg" alt="Telegram" />
             </a>
 
-            <a href="https://www.youtube.com/@usaffiliate" alt="Youtube">
+            <a href="https://www.youtube.com/@usaffiliate">
               <img class="icon-lg" src="./assets/icons/youtube.svg" alt="Youtube" />
             </a>
 
-            <a href="https://www.tiktok.com/@mustage.io" alt="Tiktok">
+            <a href="https://www.tiktok.com/@mustage.io">
               <img class="icon-lg" src="./assets/icons/tiktok.svg" alt="Tiktok" />
             </a>
           </div>
@@ -2121,5 +2169,6 @@
     <script src="./assets/scripts/slider.js"></script>
     <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/message-utils.js"></script>
+    <script src="./assets/scripts/price-utils.js"></script>
   </body>
 </html>

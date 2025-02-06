@@ -1,0 +1,23 @@
+{
+  "name": "Mustage course - Навчись арбітражу трафіку",
+  "short_name": "Mustage",
+  "icons": [
+    {
+      "src": "/assets/seo/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/seo/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "theme_color": "#6732d9",
+  "background_color": "#231640",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}
