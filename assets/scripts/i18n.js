@@ -52,8 +52,10 @@ function changeLanguage(lang) {
 
   i18next.changeLanguage(lang, () => {
     $("#username").attr("placeholder", $.t("register.short_name"));
-    fetchConsumablesData();
-    fetchTariffsData();
+    fetchDisplayedPrice().then(({ currencySymbol, currencyKey }) => {
+      fetchConsumablesData(currencySymbol, currencyKey);
+      fetchTariffsData(currencySymbol, currencyKey);
+    });
     rerender();
   });
 }

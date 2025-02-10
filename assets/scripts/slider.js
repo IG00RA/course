@@ -17,7 +17,7 @@ moveToSlide(currentIndex);
 
 function moveToSlide(index) {
   const windowWidth = window.innerWidth;
-  const isSmallDimension = windowWidth > 320 && windowWidth < 1024;
+  const isSmallDimension = windowWidth > 320 && windowWidth < 1025;
 
   updatedSlides.forEach((slide, i) => {
     slide.classList.remove("active");

@@ -137,11 +137,7 @@ body {
   height: 780px;
   z-index: -1;
   border-radius: 1200px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.8) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.8) 0%, rgba(13, 13, 13, 0) 100%);
   backdrop-filter: blur(115px);
   -webkit-backdrop-filter: blur(115px);
 }
@@ -180,13 +176,7 @@ body {
 
 .button__primary:hover {
   box-shadow: 0px 16px 40px 0px #6732d999;
-  background: linear-gradient(
-    103.81deg,
-    #f23db3 0%,
-    #6732d9 33%,
-    #6393f2 66%,
-    #f23db3 100%
-  );
+  background: linear-gradient(103.81deg, #f23db3 0%, #6732d9 33%, #6393f2 66%, #f23db3 100%);
   background-size: 200% auto;
   animation: gradient-move 10s linear infinite;
 }
@@ -264,11 +254,7 @@ body {
 }
 
 .button__rounded:hover {
-  background: linear-gradient(
-    94.48deg,
-    rgba(247, 247, 247, 0.3) 0%,
-    rgba(247, 247, 247, 0.1) 100%
-  );
+  background: linear-gradient(94.48deg, rgba(247, 247, 247, 0.3) 0%, rgba(247, 247, 247, 0.1) 100%);
 }
 
 .header {
@@ -282,12 +268,7 @@ body {
   border-radius: 0px 0px 80px 80px;
   min-height: 1000px;
   overflow: hidden;
-  background: linear-gradient(
-    103.81deg,
-    #f23db3 0%,
-    #6732d9 50.15%,
-    #6393f2 100%
-  );
+  background: linear-gradient(103.81deg, #f23db3 0%, #6732d9 50.15%, #6393f2 100%);
 }
 
 .header__top {
@@ -446,11 +427,7 @@ body {
   right: 0;
   top: 350px;
   z-index: -1;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.8) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.8) 0%, rgba(13, 13, 13, 0) 100%);
   backdrop-filter: blur(165px);
   -webkit-backdrop-filter: blur(165px);
 }
@@ -717,11 +694,7 @@ body {
   height: 1500px;
   top: 550px;
   right: -100px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.64) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.64) 0%, rgba(13, 13, 13, 0) 100%);
   backdrop-filter: blur(190px);
   -webkit-backdrop-filter: blur(190px);
   z-index: -1;
@@ -878,12 +851,7 @@ body {
   padding: 8px 16px;
   gap: 6px;
   border-radius: 40px;
-  background: linear-gradient(
-    103.81deg,
-    #f23db3 0%,
-    #6732d9 50.15%,
-    #6393f2 100%
-  );
+  background: linear-gradient(103.81deg, #f23db3 0%, #6732d9 50.15%, #6393f2 100%);
 }
 
 .privilege__card {
@@ -962,12 +930,7 @@ body {
   padding: 48px;
   gap: 24px;
   border-radius: 40px;
-  background: linear-gradient(
-    103.81deg,
-    #f23db3 0%,
-    #6732d9 50.15%,
-    #6393f2 100%
-  );
+  background: linear-gradient(103.81deg, #f23db3 0%, #6732d9 50.15%, #6393f2 100%);
   box-shadow: 0px 30px 60px 0px #6732d933;
 }
 
@@ -988,11 +951,7 @@ body {
   height: 1530px;
   top: -1050px;
   left: 100px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.64) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.64) 0%, rgba(13, 13, 13, 0) 100%);
   backdrop-filter: blur(160px);
   -webkit-backdrop-filter: blur(160px);
   z-index: -1;
@@ -1018,11 +977,7 @@ body {
   padding: 24px 32px;
   gap: 16px;
   border-radius: 24px;
-  background: radial-gradient(
-    84.27% 84.27% at 100% 106.91%,
-    #6732d9 0%,
-    #1f1f1f 100%
-  );
+  background: radial-gradient(84.27% 84.27% at 100% 106.91%, #6732d9 0%, #1f1f1f 100%);
 }
 
 .audience__card-image {
@@ -1110,11 +1065,7 @@ body {
   padding: 40px;
   gap: 40px;
   border-radius: 60px;
-  background: radial-gradient(
-    100% 116.67% at 0% 100%,
-    #5424bd 0%,
-    #1f1f1f 70.04%
-  );
+  background: radial-gradient(100% 116.67% at 0% 100%, #5424bd 0%, #1f1f1f 70.04%);
 }
 
 .course-program__pill-list {
@@ -1140,11 +1091,7 @@ body {
   height: 1510px;
   top: -350px;
   left: -600px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.64) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.64) 0%, rgba(13, 13, 13, 0) 100%);
   backdrop-filter: blur(176px);
   -webkit-backdrop-filter: blur(176px);
   z-index: -1;
@@ -1208,11 +1155,7 @@ body {
   height: 1350px;
   top: -400px;
   left: 0;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.64) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.64) 0%, rgba(13, 13, 13, 0) 100%);
   backdrop-filter: blur(167px);
   -webkit-backdrop-filter: blur(167px);
   border-radius: 1200px;
@@ -1242,7 +1185,8 @@ body {
 
 .students-result__card-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: 32px;
 }
 
@@ -1287,11 +1231,7 @@ body {
   padding: 24px 40px;
   gap: 24px;
   border-radius: 40px;
-  background: radial-gradient(
-    100% 116.67% at 0% 100%,
-    #5424bd 0%,
-    #1f1f1f 70.04%
-  );
+  background: radial-gradient(100% 116.67% at 0% 100%, #5424bd 0%, #1f1f1f 70.04%);
 }
 
 .answer__card-title {
@@ -1456,11 +1396,7 @@ body {
   top: 370px;
   backdrop-filter: blur(113px);
   -webkit-backdrop-filter: blur(113px);
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.4) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.4) 0%, rgba(13, 13, 13, 0) 100%);
 }
 
 .modal {
@@ -1538,10 +1474,7 @@ body {
   --size: clamp(250px, 688px, 688px);
   --lg-hs: 0 3%;
   --lg-stop: 50%;
-  --lg: linear-gradient(
-    hsl(var(--lg-hs) 0%) 0 var(--lg-stop),
-    hsl(var(--lg-hs) 20%) var(--lg-stop) 100%
-  );
+  --lg: linear-gradient(hsl(var(--lg-hs) 0%) 0 var(--lg-stop), hsl(var(--lg-hs) 20%) var(--lg-stop) 100%);
   position: relative;
   display: grid;
   align-items: center;
@@ -1618,12 +1551,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
-  background: linear-gradient(
-    103.81deg,
-    #f23db3 0%,
-    #6732d9 50.15%,
-    #6393f2 100%
-  );
+  background: linear-gradient(103.81deg, #f23db3 0%, #6732d9 50.15%, #6393f2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1691,12 +1619,7 @@ body {
   padding: 80px;
   width: 100%;
   gap: 32px;
-  background: linear-gradient(
-    103.81deg,
-    #f23db3 0%,
-    #6732d9 50.15%,
-    #6393f2 100%
-  );
+  background: linear-gradient(103.81deg, #f23db3 0%, #6732d9 50.15%, #6393f2 100%);
   overflow: hidden;
 }
 
@@ -1775,11 +1698,7 @@ body {
   height: 1625px;
   top: -900px;
   left: -400px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(103, 50, 217, 0.72) 0%,
-    rgba(13, 13, 13, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.72) 0%, rgba(13, 13, 13, 0) 100%);
   backdrop-filter: blur(175px);
   -webkit-backdrop-filter: blur(175px);
   border-radius: 1200px;
@@ -2266,11 +2185,7 @@ body {
     top: -260px;
     height: 635px;
     width: 950px;
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(103, 50, 217, 0.8) 0%,
-      rgba(13, 13, 13, 0) 100%
-    );
+    background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.8) 0%, rgba(13, 13, 13, 0) 100%);
     backdrop-filter: blur(107px);
     -webkit-backdrop-filter: blur(107px);
   }
@@ -2371,11 +2286,7 @@ body {
     height: 940px;
     top: -300px;
     left: -150px;
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(103, 50, 217, 0.8) 0%,
-      rgba(13, 13, 13, 0) 100%
-    );
+    background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.8) 0%, rgba(13, 13, 13, 0) 100%);
     backdrop-filter: blur(113px);
     -webkit-backdrop-filter: blur(113px);
   }
@@ -2596,11 +2507,7 @@ body {
     height: 1040px;
     top: -400px;
     left: -300px;
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(103, 50, 217, 0.8) 0%,
-      rgba(13, 13, 13, 0) 100%
-    );
+    background: radial-gradient(50% 50% at 50% 50%, rgba(103, 50, 217, 0.8) 0%, rgba(13, 13, 13, 0) 100%);
     backdrop-filter: blur(113px);
     -webkit-backdrop-filter: blur(113px);
   }
@@ -2914,4 +2821,25 @@ input.error {
 .tariff.relative,
 section.calculate {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .students-result__card-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .student__card-wrapper-image {
+    width: 30%;
+    height: 30%;
+    max-width: 450px;
+    max-height: 445px;
+    border-radius: 40px;
+  }
+  .student__card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    max-width: 800px;
+    max-height: 325px;
+  }
 }

@@ -1,4 +1,27 @@
-function fetchConsumablesData() {
+document.addEventListener("DOMContentLoaded", function () {
+  fetchDisplayedPrice().then(({ currencySymbol, currencyKey }) => {
+    fetchConsumablesData(currencySymbol, currencyKey);
+    fetchTariffsData(currencySymbol, currencyKey);
+  });
+});
+
+function fetchDisplayedPrice() {
+  return fetch(`https://${BACK_HOST}/api/displayed-price`)
+    .then((response) => response.json())
+    .then((result) => {
+      const currency = result.data?.Displayed_price || "UAH";
+      return {
+        currencySymbol: currency === "USD" ? "$ " : "₴ ",
+        currencyKey: currency === "USD" ? "Price_USD" : "Price",
+      };
+    })
+    .catch((error) => {
+      console.error("Помилка завантаження відображеної валюти:", error);
+      return { currencySymbol: "₴ ", currencyKey: "Price" };
+    });
+}
+
+function fetchConsumablesData(currencySymbol, currencyKey) {
   // Зчитуємо поточну мову з localStorage (за замовчуванням "uk-UA")
   const storedLang = localStorage.getItem("i18nextLng") || "uk-UA";
 
@@ -32,8 +55,7 @@ function fetchConsumablesData() {
         // Знаходимо елемент із назвою за допомогою data-i18n всередині .calculate__pill
         const pillSpan = item.querySelector(".calculate__pill span[data-i18n]");
         // Знаходимо елемент з ціною як наступного сусіда після .calculate__pill
-        const priceSpan =
-          item.querySelector(".calculate__pill").nextElementSibling;
+        const priceSpan = item.querySelector(".calculate__pill").nextElementSibling;
         if (pillSpan && priceSpan) {
           const i18nKey = pillSpan.getAttribute("data-i18n");
           if (mapping[i18nKey]) {
@@ -43,7 +65,7 @@ function fetchConsumablesData() {
             keys.forEach((k) => {
               if (dataByKey[k]) {
                 names.push(dataByKey[k].Name);
-                prices.push(dataByKey[k].Price);
+                prices.push(dataByKey[k][currencyKey] || dataByKey[k].Price);
               }
             });
             if (names.length === 0) {
@@ -52,7 +74,7 @@ function fetchConsumablesData() {
             }
 
             pillSpan.textContent = names.join(nameSeparator);
-            priceSpan.textContent = "$ " + prices.join(" + $ ");
+            priceSpan.textContent = currencySymbol + prices.join(" + " + currencySymbol);
           }
         }
       });
@@ -60,7 +82,7 @@ function fetchConsumablesData() {
       // Обчислюємо загальну суму (складаємо лише числові значення)
       let total = 0;
       items.forEach((item) => {
-        const price = parseFloat(item.Price);
+        const price = parseFloat(item[currencyKey] || item.Price);
         if (!isNaN(price)) {
           total += price;
         }
@@ -68,7 +90,7 @@ function fetchConsumablesData() {
       const totalElement = document.querySelector(".calculate__cost");
       if (totalElement) {
         const totalLabel = storedLang.includes("ru") ? "Вместе > " : "Разoм > ";
-        totalElement.textContent = totalLabel + total + "$";
+        totalElement.textContent = totalLabel + total + currencySymbol;
       }
     })
     .catch((error) => console.error("Помилка завантаження даних:", error))
@@ -79,7 +101,7 @@ function fetchConsumablesData() {
     });
 }
 
-function fetchTariffsData() {
+function fetchTariffsData(currencySymbol, currencyKey) {
   // Зчитуємо поточну мову з localStorage (за замовчуванням "uk-UA")
   const storedLang = localStorage.getItem("i18nextLng") || "uk-UA";
 
@@ -119,7 +141,7 @@ function fetchTariffsData() {
         // Оновлюємо ціну тарифу (елемент з класом "text-headline-1")
         const priceEl = card.querySelector(".text-headline-1");
         if (priceEl) {
-          priceEl.textContent = "$" + tariffData.Price;
+          priceEl.textContent = currencySymbol + (tariffData[currencyKey] || tariffData.Price);
         }
         // Оновлюємо список пунктів тарифу
         const listEl = card.querySelector(".tariff__card-list");
@@ -145,8 +167,3 @@ function fetchTariffsData() {
       });
     });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  fetchConsumablesData();
-  fetchTariffsData();
-});
