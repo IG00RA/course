@@ -147,7 +147,7 @@ function sendMessage(message, isRedirect = false) {
       if (response.ok) {
         if (isRedirect) {
           const currentParams = window.location.search;
-          const newUrl = `confirm.html${currentParams}`;
+          const newUrl = `/confirm.html${currentParams}`;
           window.location.href = newUrl;
         }
       } else {
