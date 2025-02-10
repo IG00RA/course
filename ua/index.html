@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <!-- Обов'язкові метатеги -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Назва сторінки -->
+    <title>Mustage course - Навчись арбітражу трафіку</title>
+
+    <!-- Мета опис для пошукових систем -->
+    <meta
+      name="description"
+      content="Безкоштовний курс з арбітражу трафіку з практичним досвідом, підтримкою експертів та можливістю потрапити в команду Mustage Friends."
+    />
+    <meta
+      name="keywords"
+      content="Mustage course, арбітраж трафіку, гембл, безкоштовний курс, навчання, арбітраж, Mustage Friends, маркетинг, інтернет-реклама"
+    />
+    <!-- Інструкція для роботів-пошуковиків -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Facebook та інші соцмережі) -->
+    <meta property="og:image" content="/assets/seo/opengraph-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mustage course - Навчись арбітражу трафіку" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mustage course - Навчись арбітражу трафіку" />
+    <meta
+      name="twitter:description"
+      content="Приєднуйся до безкоштовного курсу з арбітражу трафіку та стань частиною команди Mustage Friends!."
+    />
+    <meta name="twitter:image" content="/assets/seo/opengraph-image.png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <meta name="twitter:image:alt" content="Mustage course - Навчись арбітражу трафіку" />
+    <!-- Фавікон -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
+    <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/seo/apple-touch-icon.png" sizes="180x180" />
+
+    <link rel="manifest" href="/assets/seo/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Підключення шрифтів -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Підключення іконок -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+
+    <!-- Підключення основного CSS -->
+    <link rel="stylesheet" href="/index.css" />
+
+    <!-- Підключення скриптів -->
+    <script src="/assets/scripts/facebook-utils.js"></script>
+    <noscript></noscript>
+  </head>
+
+  <body>
+    <header class="header relative">
+      <div class="header__content relative">
+        <div class="header__top">
+          <img class="header__logo" src="/assets/images/logo.svg" alt="Mustage logo" />
+
+          <div class="nav__wrapper">
+            <nav class="nav">
+              <a href="#advantage" class="nav__link" data-i18n="nav.advantage">Переваги</a>
+              <a href="#about" class="nav__link" data-i18n="nav.about">Про нас</a>
+              <a href="#program" class="nav__link" data-i18n="nav.program">Програма</a>
+              <a href="#feedback" class="nav__link" data-i18n="nav.reviews">Відгуки</a>
+              <a href="#faq" class="nav__link" data-i18n="nav.faq">FAQ</a>
+            </nav>
+
+            <div class="relative">
+              <div id="languageMenuButton" class="header-round-block" style="cursor: pointer">
+                <img class="icon-md" src="/assets/icons/translation.svg" alt="Translate icon" />
+                <i class="fi fi-sr-angle-small-down"></i>
+              </div>
+
+              <div id="languageMenu" class="header-round-block drop-menu">
+                <button id="header_ru" class="button button__ghost" onclick="changeLanguage('ru')">RU</button>
+                <button
+                  id="header_uk"
+                  class="button button__ghost button__ghost--active"
+                  onclick="changeLanguage('uk')"
+                >
+                  UA
+                </button>
+              </div>
+            </div>
+
+            <button class="button button__rounded" onclick="redirectToChatClick();">
+              <span data-i18n="header.write_to_us">Написати нам</span>
+              <img src="/assets/icons/paper-plane.svg" alt="Paper plane icon" style="width: 38px; height: 38px" />
+            </button>
+          </div>
+
+          <button id="menu-open" class="button button__rounded header__menu-open">
+            <i class="fi fi-xs fi-sr-menu-burger"></i>
+          </button>
+        </div>
+
+        <div class="header__main">
+          <span class="text-headline-1" data-i18n="header.title">
+            Навчись знаходити прибуткові зв’язки та лити на гемблу всього за 21 день
+          </span>
+
+          <span class="header__main-description text-body-2 text-medium" data-i18n="header.description">
+            Даємо можливість опанувати арбітраж трафіку БЕЗКОШТОВНО, заощадити на розхідниках більше 250 доларів та
+            потрапити в нашу команду Mustage Friends
+          </span>
+
+          <button class="button button__secondary" onclick="redirectToBotClick();">
+            <span data-i18n="header.button">Твій успішний старт</span>
+          </button>
+        </div>
+
+        <div class="header__bottom">
+          <div class="header__info">
+            <div class="header__info-item">
+              <span
+                class="header__info-item-title underline-animation text-headline-3"
+                data-i18n="header.no_costs.title"
+              >
+                Без зайвих витрат:
+              </span>
+              <span class="header__info-item-description text-body-3" data-i18n="header.no_costs.description">
+                купуєте тільки розхідники
+              </span>
+            </div>
+
+            <div class="divider--vertical divider--hidden"></div>
+
+            <div class="header__info-item">
+              <span
+                class="header__info-item-title underline-animation text-headline-3"
+                data-i18n="header.community.title"
+              >
+                Закрите ком'юніті:
+              </span>
+              <span class="header__info-item-description text-body-3" data-i18n="header.community.description">
+                додаткові фічі після курсу
+              </span>
+            </div>
+
+            <div class="divider--vertical divider--hidden"></div>
+
+            <div class="header__info-item">
+              <span
+                class="header__info-item-title underline-animation text-headline-3"
+                data-i18n="header.support.title"
+              >
+                Професійна підтримка баєрів:
+              </span>
+              <span class="header__info-item-description text-body-3" data-i18n="header.support.description">
+                майже 24/7
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="header__image-container">
+          <img class="header__image" src="/assets/images/4de0a600.webp" alt="Header image" loading="lazy" />
+        </div>
+
+        <div id="menu" class="header__menu">
+          <div class="header__menu-content">
+            <div class="column gap-32">
+              <img class="header__logo" src="/assets/images/logo.svg" alt="Mustage logo" />
+
+              <div class="column gap-16">
+                <a href="#advantage" class="menu__link" data-i18n="nav.advantage">Переваги</a>
+                <a href="#about" class="menu__link" data-i18n="nav.about">Про нас</a>
+                <a href="#program" class="menu__link" data-i18n="nav.program">Програма</a>
+                <a href="#feedback" class="menu__link" data-i18n="nav.reviews">Відгуки</a>
+                <a href="#faq" class="menu__link" data-i18n="nav.faq">FAQ</a>
+              </div>
+
+              <div class="row gap-8">
+                <img class="icon-md" src="/assets/icons/translation.svg" alt="Translate icon" />
+                <button id="menu_ru" class="button button__ghost" onclick="changeLanguage('ru')">RU</button>
+                <button id="menu_uk" class="button button__ghost button__ghost--active" onclick="changeLanguage('uk')">
+                  UA
+                </button>
+              </div>
+            </div>
+
+            <button class="button button__rounded" onclick="redirectToChatClick();">
+              <span data-i18n="header.write_to_us">Написати нам</span>
+              <img src="/assets/icons/paper-plane.svg" alt="Paper plane icon" style="width: 38px; height: 38px" />
+            </button>
+          </div>
+
+          <button id="menu-close" class="button button__rounded header__menu-close">
+            <i class="fi fi-xs fi-sr-cross"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__flash"></div>
+    </header>
+
+    <main>
+      <article class="article">
+        <section class="advantage relative">
+          <a name="advantage" class="advantage__title text-headline-1 text-right" style="max-width: 1409px">
+            <div class="title-with-line">
+              <span class="triangle"></span>
+              <span data-i18n="advantage.title_start">Не зволікай,</span>
+            </div>
+            <span data-i18n="advantage.title_end">на тебе чекає багато «плюшок»</span>
+          </a>
+
+          <div class="advantage__content">
+            <div class="column gap-16">
+              <div class="advantage-item">
+                <div class="advantage-item__image-wrapper">
+                  <img class="advantage-item__image" src="/assets/images/Puzzles.png" alt="Pazzle image" />
+                  <div class="advantage-item__image-blur"></div>
+                </div>
+
+                <div class="column gap-16">
+                  <span class="text-headline-3 text-bold" data-i18n="advantage.advantage1.title">
+                    Продумана система навчання з практичним досвідом
+                  </span>
+                  <span class="text-body-3 text-medium" data-i18n="advantage.advantage1.description">
+                    Навчимо усьому, що потрібно для успішного старту в арбітражі. Пройдучи весь шлях з нуля з нами, ти
+                    зможеш підбирати вдалі офери, складати ТЗ для конвертуючих креативів, користуватися необхідними
+                    сервісами та запускати рекламу у ФБ.
+                  </span>
+                </div>
+              </div>
+
+              <div class="advantage-item">
+                <div class="advantage-item__image-wrapper">
+                  <img class="advantage-item__image" src="/assets/images/Chat.png" alt="Chat image" />
+                  <div class="advantage-item__image-blur"></div>
+                </div>
+
+                <div class="column gap-16">
+                  <span class="text-headline-3 text-bold" data-i18n="advantage.advantage2.title">
+                    Доступи до каналу і чату свого потоку
+                  </span>
+                  <span class="text-body-3 text-medium" data-i18n="advantage.advantage2.description">
+                    Будеш проходити курс з однодумцями: нетворкати, обмінюватися досвідом, швидко вирішувати проблеми.
+                    Так зможеш уникнути помилок, а також успішно і швидко стартанути в арбітражі.
+                  </span>
+                </div>
+              </div>
+
+              <div class="advantage-item">
+                <div class="advantage-item__image-wrapper">
+                  <img class="advantage-item__image" src="/assets/images/Folder.png" alt="Chat image" />
+                  <div class="advantage-item__image-blur"></div>
+                </div>
+
+                <div class="column gap-16">
+                  <span class="text-headline-3 text-bold" data-i18n="advantage.advantage3.title">
+                    Зручний конект через Telegram
+                  </span>
+                  <span class="text-body-3 text-medium" data-i18n="advantage.advantage3.description">
+                    Всі навчальні матеріали публікуватимемо на каналі потоку. Домашки і тести будеш здавати через бота,
+                    в якому все зручно структуровано. По ним – детальний зворотній зв’язок від куратора.
+                  </span>
+                </div>
+              </div>
+
+              <div class="advantage-item">
+                <div class="advantage-item__image-wrapper">
+                  <img class="advantage-item__image" src="/assets/images/Calendar.png" alt="Chat image" />
+                  <div class="advantage-item__image-blur"></div>
+                </div>
+
+                <div class="column gap-16">
+                  <span class="text-headline-3 text-bold" data-i18n="advantage.advantage4.title">
+                    2 зідзвони з крутими наставниками в Zoom
+                  </span>
+                  <span class="text-body-3 text-medium" data-i18n="advantage.advantage4.description">
+                    Зможеш поспілкуватися з ТОПовими баєрами нашої команди і поставити їм будь-які питання про тонкощі
+                    заливу реклами на гемблу. Це мега можливість як для новачків, так і для діючих арбітражників.
+                  </span>
+                </div>
+              </div>
+
+              <div class="advantage-item">
+                <div class="advantage-item__image-wrapper">
+                  <img class="advantage-item__image" src="/assets/images/Info.png" alt="Chat image" />
+                  <div class="advantage-item__image-blur"></div>
+                </div>
+
+                <div class="column gap-16">
+                  <span class="text-headline-3 text-bold" data-i18n="advantage.advantage5.title">
+                    Оперативний та чуйний сапорт
+                  </span>
+                  <span class="text-body-3 text-medium" data-i18n="advantage.advantage5.description">
+                    Щось не так з домашкою, не виходить прив'язати карти до акаунтів, додати проксі в антидетект браузер
+                    – ці та інші питання допоможуть розрулити наші експерти-куратори. Просто пиши їм в чат, і відповідь
+                    у тебе протягом 10 хвилин.
+                  </span>
+                </div>
+              </div>
+
+              <div class="advantage-item">
+                <div class="advantage-item__image-wrapper">
+                  <img class="advantage-item__image" src="/assets/images/Users.png" alt="Chat image" />
+                  <div class="advantage-item__image-blur"></div>
+                </div>
+
+                <div class="column gap-16">
+                  <span class="text-headline-3 text-bold" data-i18n="advantage.advantage6.title">
+                    Можливість потрапити в команду для кожного
+                  </span>
+                  <span class="text-body-3 text-medium" data-i18n="advantage.advantage6.description">
+                    Наполегливо навчаєшся – проявляєш активність у чаті – ідеш далі, незважаючи на невдачі – прагнеш до
+                    розвитку у вертикалі гемблінгу. При такому розкладі після курсу ми запросимо тебе у Mustage Friends,
+                    надамо спеціальну знижку на наші акаунти та всі сервіси для заливу БЕЗКОШТОВНО.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="advantage-action">
+            <button class="button button__primary" onclick="redirectToBotClick();">
+              <span data-i18n="advantage.register"> Зареєструватися на курс </span>
+              <img class="icon-md" src="/assets/icons/right-arrow.svg" alt="Arrow right" />
+            </button>
+          </div>
+
+          <div class="advantage__flash"></div>
+        </section>
+
+        <section class="container">
+          <div class="privilege">
+            <div class="">
+              <span class="privilege__title text-headline-1">
+                <span data-i18n="privilege.title.start"> Окрім того, ти зможеш </span>
+                <span>
+                  <span class="text-primary" data-i18n="privilege.title.save"> зекономити </span>
+                  <span data-i18n="privilege.title.walker"> на розхідниках </span>
+                </span>
+                <span>
+                  <span data-i18n="and"> і </span>
+                  <span class="text-primary" data-i18n="privilege.title.max"> по максимуму </span>
+                  <span data-i18n="privilege.title.end"> вкластися в трафік </span>
+                </span>
+              </span>
+            </div>
+
+            <div class="column gap-16">
+              <div class="privilege__note">
+                <div class="privilege__note-pill">
+                  <span class="text-body-1 text-medium text-nowrap" data-i18n="privilege.free_course">
+                    Наш курс БЕЗКОШТОВНИЙ
+                  </span>
+                </div>
+
+                <span class="text-body-1" data-i18n="privilege.free_note">
+                  Але май на увазі, твій успішний старт у заливі на гемблу неможливий без розхідників. Антидетект
+                  браузери, спай-сервіси, трекери – все це і багато інших інструментів знадобляться у роботі з трафіком.
+                  У тебе є два шляхи:
+                </span>
+              </div>
+
+              <div class="privilege__step-list">
+                <div class="privilege__step">
+                  <img class="privilege__arrow" src="/assets/images/Vector2.svg" alt="Left arrow" />
+                  <div class="privilege__card privilege__card--outline">
+                    <span class="text-headline-3" data-i18n="privilege.step1.title">1. Шлях спроб та помилок </span>
+                    <span class="text-body-3" data-i18n="privilege.step1.description">
+                      Існує безліч сервісів для арбітражу. Щоб знайти серед них оптимальні, ти можеш витратити купу часу
+                      і грошей. Інколи у людей іде на це > 1 000$, ще й не всі рішення бувають якісні.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="privilege__step">
+                  <img class="privilege__arrow" src="/assets/images/Vector3.svg" alt="Right arrow" />
+                  <div class="relative privilege__card privilege__card--primary">
+                    <div class="privilege__top-change privilege__mark">
+                      <span class="text-body-3" data-i18n="privilege.top"> ТОП вибір </span>
+                      <img src="/assets/icons/shines.svg" alt="Shiens" style="width: 24px; height: 24px" />
+                    </div>
+
+                    <span class="text-headline-3" data-i18n="privilege.step2.title">2. Вигідне готове рішення </span>
+                    <span class="text-body-3" data-i18n="privilege.step2.description">
+                      Ми пройшли перший шлях замість тебе, підготували паки з найкращими рішеннями на ринку з суттєвими
+                      знижками. Бери, користуйся, економ свій час і гроші.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="calculate">
+          <div class="container calculate__title">
+            <span class="text-headline-1 text-right" style="max-width: 1168px" data-i18n="calculate.title">
+              Припустимо, що ти вирішив купити розхідники самостійно
+            </span>
+          </div>
+
+          <div class="calculate__content">
+            <div class="calculate__block">
+              <span class="text-headline-1" data-i18n="calculate.example">Давай прикинемо:</span>
+
+              <div class="calculate__list">
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <i class="fi fi-sr-mode-portrait"></i>
+                    <span class="text-headline-3 text-medium" data-i18n="calculate.kings"> Кінги і самореги </span>
+                  </div>
+                  <span class="text-headline-3">$ 49 + $ 30</span>
+                </div>
+
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <i class="fi fi-sr-graduation-cap"></i>
+                    <span class="text-headline-3" data-i18n="calculate.mentor">Наставник</span>
+                  </div>
+                  <span class="text-headline-3">$ ∞</span>
+                </div>
+
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <i class="fi fi-sr-picture"></i>
+                    <span class="text-headline-3" data-i18n="calculate.creo"> Крео </span>
+                  </div>
+                  <span class="text-headline-3">$ 48</span>
+                </div>
+
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <i class="fi fi-sr-navigation"></i>
+                    <span class="text-headline-3" data-i18n="calculate.autobay"> Автозалив </span>
+                  </div>
+                  <span class="text-headline-3">$ 100</span>
+                </div>
+
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <img class="calculate__icon--long" src="/assets/icons/keitaro.svg" alt="Keitaro icon" />
+                    <span class="text-headline-3" data-i18n="calculate.treker"> Трекер Keitaro </span>
+                  </div>
+                  <span class="text-headline-3">$ 50</span>
+                </div>
+
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <img class="calculate__icon" src="/assets/icons/logo_square1.svg" alt="Spay icon" />
+                    <span class="text-headline-3" data-i18n="calculate.spay"> Спай </span>
+                  </div>
+                  <span class="text-headline-3">$ 70</span>
+                </div>
+
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <img class="calculate__icon" src="/assets/icons/ant.svg" alt="Antic icon" />
+                    <span class="text-headline-3" data-i18n="calculate.antik"> Антик </span>
+                  </div>
+                  <span class="text-headline-3">$ 160</span>
+                </div>
+
+                <div class="calculate__list-item">
+                  <div class="calculate__pill">
+                    <i class="fi fi-sr-wifi-alt"></i>
+                    <span class="text-headline-3" data-i18n="calculate.proxi"> Проксі на місяць </span>
+                  </div>
+                  <span class="text-headline-3">$ 35</span>
+                </div>
+              </div>
+
+              <div class="calculate__block" style="gap: 24px">
+                <span class="text-headline-3 calculate__cost" data-i18n="calculate.total"> Разoм > 542$ </span>
+
+                <div class="calculate__note">
+                  <span class="text-headline-1 text-nowrap" data-i18n="calculate.but"> але! - </span>
+                  <span class="calculate__note-description text-body-3">
+                    <span data-i18n="calculate.note_start"> Ми давно в темі, тож вибили </span>
+                    <span class="text-bold" data-i18n="calculate.sale"> СУПЕР ЗНИЖКИ </span>
+                    <span data-i18n="calculate.note_end">
+                      для своїх учнів. Ти зможеш зекономити на розхідниках більше 250$ і вкласти ці гроші у бюджет. За
+                      умови твоєї включеності в роботу це дасть можливість успішно стартанути в арбітражі трафіку.
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="part-pay" onclick="redirectToChatClick();">
+                <span class="text-body-2 text-bold text-underline">Можлива оплата частинами</span>
+
+                <div class="part-pay__icons">
+                  <img class="part-pay__icon" src="/assets/icons/Frame294.svg" alt="Privat bank" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame292.svg" alt="Monobank" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame293.svg" alt="A bank" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame295.svg" alt="OTP" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame296.svg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container experience relative">
+          <div class="">
+            <a name="about" class="text-headline-1">
+              <span data-i18n="experience.title.start"> Ми маємо </span>
+              <span class="text-primary" data-i18n="experience.title.middle"> великий досвід і експертизу </span>
+              <span data-i18n="experience.title.end"> в арбітражі, тож зможемо навчити тебе всім тонкощам</span>
+            </a>
+          </div>
+
+          <div class="experience__content">
+            <div class="experience__panel-list-wrapper">
+              <div class="experience__panel-list">
+                <div class="experience__panel-row">
+                  <div class="experience__panel experience__panel-column">
+                    <img class="experience__icon" src="/assets/icons/time-and-date.svg" alt="Time icon" />
+                    <span class="text-body-3 text-medium" data-i18n="experience.experience">
+                      Ми варимося в арбітражі трафіку вже 4 роки. За цей час протестували величезну кількість шляхів,
+                      рішень та інструментів, віднайшли сотні лайфхаків та вивели свою формулу успіху в ніші.
+                    </span>
+                  </div>
+
+                  <div class="experience__panel experience__panel-column">
+                    <img class="experience__icon" src="/assets/icons/loading.svg" alt="Loading icon" />
+                    <span class="text-body-3 text-medium" data-i18n="experience.system">
+                      Успішно розвиваємо цілу систему, що включає 8 проєктів, до яких входять публічні та закриті
+                      продукти.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="experience__panel">
+                  <img class="experience__icon" src="/assets/icons/user-engagement.svg" alt="User engagement icon" />
+                  <span class="text-body-3 text-medium" data-i18n="experience.on_market">
+                    Майже 3 роки ведемо свій авторський канал на YouTube – Вусатий арбітражник. Там вже 17,7 тис.
+                    підписників і більше 70 відео, які містять цінні гайди та небанальні поради з нашого досвіду.
+                  </span>
+                </div>
+
+                <div class="experience__panel">
+                  <img
+                    class="experience__icon"
+                    src="/assets/icons/project-management.svg"
+                    alt="Project management icon"
+                  />
+                  <div class="text-body-3 text-medium">
+                    <span data-i18n="experience.have.title">Маємо все необхідне для успішного заливу:</span>
+                    <ul>
+                      <li data-i18n="experience.have.shop">шоп з акаунтами FB, за яким стоїть цілий фарм відділ</li>
+                      <li data-i18n="experience.have.site">сайт з проксями</li>
+                      <li data-i18n="experience.have.designers">
+                        дизайнерський відділ, що розробляє ефективні крео будь-якої складності на всі вертикал
+                      </li>
+                      <li data-i18n="experience.have.products">
+                        внутрішні продукти автоматизації, баїнгу та розробки.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience__general-panel">
+              <img class="experience__general-panel-icon" src="/assets/images/logo-icon.svg" alt="Logo" />
+
+              <div class="column gap-16">
+                <span class="text-body-1 text-medium" data-i18n="experience.description.start">
+                  За роки досвіду зробили багато відкриттів та набили немало шишок, тож тепер точно знаємо, яка інфа
+                  корисна, а яка – іржавої копійчини не варта.
+                </span>
+                <span class="text-body-1 text-medium" data-i18n="experience.description.end">
+                  Наш курс – вижимка корисних знань без води, яку часто впарюють інфоцигани, та ще й за великі гроші.
+                  Скористайся шансом отримати цінні навички безкоштовно.
+                </span>
+              </div>
+
+              <div class="experience__general-panel-action">
+                <button class="button button__secondary" onclick="redirectToBotClick();">
+                  <span class="row row__align-center gap-8">
+                    <strong data-i18n="experience.join">Хочу приєднатись</strong>
+                    <i class="fi fi-sm fi-sr-arrow-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience__flash"></div>
+        </section>
+
+        <section class="container">
+          <div class="audience">
+            <div class="column column__right">
+              <span class="text-headline-1 text-right" style="max-width: 1168px" data-i18n="audience.title">
+                Курс підійде для новачків, діючих арбітражників, студентів і спеціалістів з інших ніш
+              </span>
+            </div>
+
+            <div class="audience__card-list">
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.noob.title">Нубу</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.noob.subtitle">
+                    Мало що розумієш в арбітражі, але хочеш почати?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.noob.description">
+                    Ми дамо тобі потужну базу: пояснимо всі основи і механіку роботи арбітражу трафіку в Facebook. Будеш
+                    мати чітке розуміння кожного етапу процесу.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img class="audience__card-image" src="/assets/images/DRIP_13.webp" alt="Noob image" />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.targetologist.title">Таргетологу</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.targetologist.subtitle">
+                    Мало що розумієш в арбітражі, але хочеш Вмієш непогано налаштовувати рекламу, але не знаєш, як її
+                    масштабувати??
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.targetologist.description">
+                    Уметь настраивать рекламу - это хорошо, но знаете ли вы, как ее масштабировать? Возможно, вы уже
+                    проходили курсы от "экспертов", демонстрирующих крутые инстаграмм-страницы, но на самом деле в них
+                    дают базовую информацию, такую как "это компьютер, нажмите кнопку включения" или "повышайте бюджет
+                    на 30% раз в два дня". Такие советы часто не работают, и ваши лиды становятся более дорогими. Наш
+                    курс научит вас эффективно масштабировать рекламу с помощью десятков рекламных кабинетов и аккаунтов
+                    Facebook.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img class="audience__card-image" src="/assets/images/DRIP_11.webp" alt="Targetologist image" />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.arbitrator.title">Арбітражнику</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.arbitrator.subtitle">
+                    Вже працював в арбітражі на інших платформах і хочеш розширити навички?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.arbitrator.description">
+                    Ми допоможемо полагодити з Фейсбуком та досягти результатів в заливі. Та головний плюс в тому, що ти
+                    зможеш потрапити до закритого ком'юніті Mustage Friends, яке дасть тобі ключ до постійного розвитку
+                    в ніші.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img class="audience__card-image" src="/assets/images/DRIP_5.webp" alt="Arbitrator image" />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.victims.title">Жертві інфоциган</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.victims.subtitle">
+                    Вже витратив купу грошей на десятки дорогих курсів, а толку нуль?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.victims.description">
+                    На додачу до сплати за сам курс інфоцигани пропонують контакти «перевірених» продавців розхідників,
+                    дорогих і часто неякісних. Ми надамо тобі все, що необхідно в роботі, бо маємо цілу інфраструктуру
+                    для успішного запуску. Витрати з твого боку мінімальні.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img
+                    class="audience__card-image"
+                    src="/assets/images/DRIP_2.webp"
+                    alt="Victims of information image"
+                  />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.student.title">Студенту</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.student.subtitle">
+                    Втомився рахувати кожну копійку і заварювати «швидку» вермішель?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.student.description">
+                    Зміни це, налагодивши стабільний заробіток в арбітражі. Ми пропонуємо гнучкий дистанційний графік
+                    навчання, який легко поєднувати з універом. На яку спеціальність ти вчишся, неважливо.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img class="audience__card-image" src="/assets/images/DRIP_17.webp" alt="Student image" />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.young.title">Молодому та амбіційному</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.young.subtitle">
+                    Шукаєш вигідні шляхи для інвестування або нові перспективи для розвитку бізнесу?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.young.description">
+                    Арбітраж трафіку – доволі вигідна навичка для просування власної бізнес-справи. Ми навчимо тебе
+                    масштабувати свої рекламні кампанії, завдяки чому зможеш отримувати високі прибутки.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img
+                    class="audience__card-image"
+                    src="/assets/images/DRIP_13(1).webp"
+                    alt="To the young and ambitious image"
+                  />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.smm.title">SMM, спецу з контенту</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.smm.subtitle">
+                    Вперся у стелю і не знаєш, як збільшити заробіток?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.smm.description">
+                    Не контентом єдиним: опанувавши інструментарій арбітражу трафіку безкоштовно, ти зможеш значно
+                    збільшити прибуток своїх клієнтів. А значить матимеш всі підстави збільшувати і свій чек також.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img
+                    class="audience__card-image"
+                    src="/assets/images/DRIP_7.webp"
+                    alt="SMM, content specialist image"
+                  />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.freelancer.title">Фрилансеру</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.freelancer.subtitle">
+                    Хочеш розвиватися в своїй ніші і мати постійний потік замовлень?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.freelancer.description">
+                    На безкоштовному курсі з арбітражу ти навчишся працювати з трафіком і лити рекламу на власні
+                    послуги. Завдяки новим навичкам підвищиш свій чек та отримаєш стабільні джерела прибутку замість
+                    одноразових замовлень.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img class="audience__card-image" src="/assets/images/DRIP_14.webp" alt="For a freelancer image" />
+                </div>
+              </div>
+
+              <div class="audience__card">
+                <div class="column gap-16">
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/arrow-right.svg" alt="Arrow icon" />
+                    <span class="text-headline-3" data-i18n="audience.joking.title">Хто в пошуках себе</span>
+                  </div>
+
+                  <span class="text-body-3 text-bold" data-i18n="audience.joking.subtitle">
+                    Мрієш змінити професію на більш перспективну?
+                  </span>
+
+                  <span class="text-body-3" data-i18n="audience.joking.description">
+                    На нашому курсі ми даємо нові якісні знання з affilate маркетингу та арбітражу. Це твій шанс швидко
+                    увійти в нову нішу. Ти отримаєш навички таргетолога, створиш портфоліо і зможеш швидко знайти
+                    роботу.
+                  </span>
+                </div>
+
+                <div class="column column__right">
+                  <img
+                    class="audience__card-image"
+                    src="/assets/images/DRIP_18.webp"
+                    alt="Who's just kidding himself image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="warning relative">
+            <span class="text-headline-1" data-i18n="warning.title">Але легко не буде:</span>
+
+            <div class="warning__content">
+              <div class="column column__center" style="max-width: 975px">
+                <span class="text-headline-2" data-i18n="warning.subtitle.start">ми не про «золоті гори», </span>
+                <span class="text-headline-2" data-i18n="warning.subtitle.end">по-швидкому зрубити бабла не вийде</span>
+              </div>
+
+              <div class="column gap-24" style="max-width: 928px">
+                <span class="text-body-1" data-i18n="warning.description_p1">
+                  Будемо максимально чесними: чарівних кнопок з надписом «Бабло» ми не роздаємо. Божевільних ROI прямо з
+                  перших днів курсу не чекай. Щоб досягти успіху в арбітражі, тобі доведеться наполегливо вчитися і
+                  пахати. Будуть злети і падіння, ти зрозумієш, що таке вибрики ФБ, бани акаунтів, невтішні результати
+                  реклами.
+                </span>
+                <span class="text-body-1" data-i18n="warning.description_p2">
+                  Проте ти отримаєш від нас глибокі знання. На курсі опануєш важливі навички, з якими зможеш прийти до
+                  бажаних доходів з заливу на гемблу. Цей курс – не просто теоретична база, а можливість швидко перейти
+                  до реальних дій.
+                </span>
+              </div>
+            </div>
+
+            <div class="background-radial-gradient"></div>
+          </div>
+        </section>
+
+        <section class="whom__wrapper">
+          <div class="whom">
+            <div class="whom__title">
+              <span class="text-headline-1" data-i18n="whom.title.start">Кожен візьме з курсу те, що</span>
+              <span class="text-headline-1" data-i18n="whom.title.end">йому найбільше потрібно</span>
+            </div>
+
+            <div class="whom__content">
+              <div class="whom__column">
+                <div class="whom__card">
+                  <span class="text-body-3">
+                    <span class="text-bold" data-i18n="whom.newbies.title"> Новачки </span>
+                    <span data-i18n="whom.newbies.description">
+                      зрозуміють абсолютно всю базу арбітражу, заручаться підтримкою професійної спільноти та зможуть
+                      впевнено почуватися на співбесідах.
+                    </span>
+                  </span>
+                </div>
+
+                <div class="whom__card">
+                  <span class="text-body-3">
+                    <span data-i18n="whom.arbitrator.pretitle"> Діючі </span>
+                    <span class="text-bold" data-i18n="whom.arbitrator.title">арбітражники</span>
+                    <span data-i18n="whom.arbitrator.description">
+                      не отримають якихось нових, унікальних зв'язок. Зате зможуть користуватися розхідниками за
+                      вигідними цінами і навчаться оптимізовувати рекламні бюджети. Матимуть можливість поспілкуватися з
+                      досвідченими баєрами, знайти корисні зв'язки та стати учасником професійного ком'юніті.
+                    </span>
+                  </span>
+                </div>
+
+                <div class="whom__card">
+                  <span class="text-body-3">
+                    <span class="text-bold" data-i18n="whom.targetologist.title">Таргетологи та смм-ники</span>
+                    <span data-i18n="whom.targetologist.description">
+                      навчаться залучати дешевих лідів, аналізувати рекламну кампанію та знаходити нові можливості для
+                      її масшабування. Це можливість додати нову послугу і в рази підвищити свою цінність на ринку.
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="whom__column">
+                <div class="whom__card">
+                  <span class="text-body-3">
+                    <span class="text-bold" data-i18n="whom.freelancer.title">Фрилансери</span>
+                    <span data-i18n="whom.freelancer.description">
+                      зможуть отримати нові навички і заливати рекламу на свої послуги. Звідси - стабільний потік
+                      клієнтів і ріст доходів. Також отримають можливість запускати власні проєкти. Це цілком реально,
+                      якщо вмієш робити ефективні рекламні кампанії.
+                    </span>
+                  </span>
+                </div>
+
+                <div class="whom__card">
+                  <span class="text-body-3">
+                    <span class="text-bold" data-i18n="whom.student.title">Студенти</span>
+                    <span data-i18n="whom.student.description">
+                      отримають реальні навички з арбітражу трафіку, які можна застосовувати вже під час навчання в
+                      універі. Запустять свій перший проєкт і досягнуть перших результатів. Зможуть знайти дистанційну
+                      роботу та легко поєднувати її з навчанням.
+                    </span>
+                  </span>
+                </div>
+
+                <div class="whom__card h-100">
+                  <span class="text-body-3">
+                    <span class="text-bold" data-i18n="whom.joking.title">Ті, хто в пошуку себе</span>
+                    <span data-i18n="whom.joking.description">
+                      опанують нову для себе професію арбітражника, яка користується великим попитом на ринку. Зможуть
+                      працювати віддалено і знаходити нові можливості.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="course-program relative">
+            <div class="row">
+              <a name="program" class="text-headline-1 text-right" data-i18n="course_program.title">
+                Будемо навчатися за насиченою програмою, яка включає важливу теорію і практику
+              </a>
+            </div>
+
+            <div class="course-program__list">
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_1.material">
+                    1 година 29 хвилин відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_1.home">
+                    2 домашніх завдання
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_1.test">
+                    5 тестів для кращого засвоєння матеріалу
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_1.title">
+                  Блок 1. Основи арбітражу трафіку та вибір оферу.
+                </span>
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_1.lesson_1.title">
+                      Урок 1.1
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_1.lesson_1.description">
+                      19 порад для початківців: ключові моменти та поширені помилки.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_1.lesson_2.title">
+                      Урок 1.2
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_1.lesson_2.description">
+                      Що таке арбітраж трафіку? Гравці на ринку та їхні ролі. Особливості вертикалі гемблінгу: за що
+                      платить рекламодавець і як оцінює трафік.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_1.lesson_3.title">
+                      Урок 1.3
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_1.lesson_3.description">
+                      Основні терміни та поняття, необхідні для роботи в арбітражі трафіку.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_1.lesson_4.title">
+                      Урок 1.4
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_1.lesson_4.description">
+                      Як вибрати відповідне ГЕО та офер: на що звертати увагу.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row row__align-center gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_1.lesson_5.title">
+                      Урок 1.5
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_1.lesson_5.description">
+                      Реєстрація на Binance та переказ грошей: покроковий гайд.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_2.material">
+                    1 година 39 хвилин відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_2.home">
+                    5 домашніх завдання
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_2.test">
+                    5 тестів для кращого засвоєння матеріалу
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_2.title">
+                  Блок 2. Робота з антидетект браузером, проксі та акаунтами.
+                </span>
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_2.lesson_1.title">
+                      Урок 2.1
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_2.lesson_1.description">
+                      Що таке антидетект браузер, навіщо він і як його встановити на комп'ютері.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_2.lesson_2.title">
+                      Урок 2.2
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_2.lesson_2.description">
+                      Проксі: поняття, різновиди, як і де їх придбати (мобільні версії) та завести в антик.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_2.lesson_3.title">
+                      Урок 2.3
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_2.lesson_3.description">
+                      Купівля акаунтів: де шукати і як вибирати.Завантаження в Dolphin і управління куками.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_2.lesson_4.title">
+                      Урок 2.4
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_2.lesson_4.description">
+                      Ведення обліку розхідників у Google Таблицях для ефективного управління.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_2.lesson_5.title">
+                      Урок 2.5
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_2.lesson_5.description">
+                      Масове завантаження акаунтів у Dolphin. Додаткові поради щодо обліку.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_3.material">
+                    1 година 19 хвилин відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_3.home">
+                    3 домашніх завдання
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_3.test">
+                    4 теста для кращого засвоєння матеріалу
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_3.title"
+                  >Блок 3. Підготовка до запуску реклами</span
+                >
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_3.lesson_1.title"
+                      >Урок 3.1</span
+                    >
+                    <span class="text-body-3" data-i18n="course_program.block_3.lesson_1.description">
+                      Огляд рекламного кабінету Facebook. Відмінності між Ads Manager та Business Manager.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_3.lesson_2.title">
+                      Урок 3.2
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_3.lesson_2.description">
+                      Платіжки для арбітражу трафіку. Прив’язка карти до білінгу.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_3.lesson_3.title">
+                      Урок 3.3
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_3.lesson_3.description">
+                      Як розшарювати прилки на рекламні кабінети: покрокова інструкція.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_3.lesson_4.title">
+                      Урок 3.4
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_3.lesson_4.description">
+                      Види чеків у Facebook: ризики, ЗРД, поліси та як підготуватися до них.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_4.material">
+                    52 хвилини відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_4.home">
+                    4 домашніх завдання
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_4.test">
+                    3 теста для кращого засвоєння матеріалу
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_4.title">
+                  Блок 4. Створення ефективних креативів.
+                </span>
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_4.lesson_1.title">
+                      Урок 4.1
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_4.lesson_1.description">
+                      Правила створення креативів, що приносять конверсії: основні підходи.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_4.lesson_2.title">
+                      Урок 4.2
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_4.lesson_2.description">
+                      Як аналізувати рекламу конкурентів у Facebook: огляд Spy-сервісу ADHEART. Використання
+                      конкурентного аналізу для покращення власних креативів та стратегій.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_4.lesson_3.title">
+                      Урок 4.3
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_4.lesson_3.description">
+                      Як і де замовити якісні креативи. Складання ТЗ і ефективна комунікація з дизайнерами.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_5.material">
+                    44 хвилини відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_5.home">
+                    4 домашніх завдання
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_5.test">
+                    1 тест для кращого засвоєння матеріалу
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_5.title">
+                  Блок 5. Правила лінкування акаунтів та налаштування сетапів
+                </span>
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_5.lesson_1.title">
+                      Урок 5.1
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_5.lesson_1.description">
+                      Що таке лінкування акаунтів і навіщо воно потрібне.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_5.lesson_2.title">
+                      Урок 5.2
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_5.lesson_2.description">
+                      Як правильно лінкувати самореги до особистих акаунтів.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_5.lesson_3.title">
+                      Урок 5.3
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_5.lesson_3.description">
+                      Лінкування саморегів у Business Manager.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_5.lesson_4.title">
+                      Урок 5.4
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_5.lesson_4.description">
+                      Що робити, якщо не вдається створити бізнес-менеджер.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_5.lesson_5.title">
+                      Урок 5.5
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_5.lesson_5.description">
+                      Як додати рекламний кабінет до Business Manager: лінкування саморегів до кінга. Створення міцних
+                      сетапів: практичні поради для забезпечення стабільної роботи.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_6.material">
+                    54 хвилини відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_6.home">
+                    5 домашніх завдання
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_6.test">
+                    1 тест для кращого засвоєння матеріалу
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_6.title">
+                  Блок 6. Запуск реклами та робота з банами в Facebook
+                </span>
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_6.lesson_1.title">
+                      Урок 6.1
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_6.lesson_1.description">
+                      Запуск реклами на гемблінг-додатки. Детальний розбір таргетингу та стратегії.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_6.lesson_2.title">
+                      Урок 6.2
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_6.lesson_2.description">
+                      Як отримати код від Facebook без номера телефону: огляд сервісів для прийому SMS.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_6.lesson_3.title">
+                      Урок 6.3
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_6.lesson_3.description">
+                      Проходження різних типів чеків на Facebook: частина 1.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_6.lesson_4.title">
+                      Урок 6.4
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_6.lesson_4.description">
+                      Що робити, якщо виникають ризики. Як створювати припей акаунти в Facebook.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_6.lesson_5.title">
+                      Урок 6.5
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_6.lesson_5.description">
+                      Аналіз результатів рекламних кампаній. Проходження чеків: частина 2.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_7.material">
+                    48 хвилини відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_7.home">
+                    1 домашнє завдання
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_7.test">
+                    1 тест (18 питань) для кращого засвоєння матеріалу
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_7.title"
+                  >Блок 7. Робота з автозаливом FBTOOL</span
+                >
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold text-nowrap" data-i18n="course_program.block_7.lesson_1.title">
+                      Урок 7.1
+                    </span>
+                    <span class="text-body-3" data-i18n="course_program.block_7.lesson_1.description">
+                      Інструкція з налаштування та використання FBTOOL для автозаливу рекламних кампаній.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+
+              <div class="course-program__card">
+                <div class="course-program__pill-list">
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_8.material">
+                    37 хвилин відеоматеріалу
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_8.home">
+                    Без домашніх завдань
+                  </div>
+                  <div class="course-program__pill text-body-3 text-medium" data-i18n="course_program.block_8.test">
+                    Без тестів
+                  </div>
+                </div>
+
+                <span class="text-headline-3" data-i18n="course_program.block_8.title">
+                  Блок 8. Фарминг акаунтів: цілі, стратегії, вибір інструментів.
+                </span>
+
+                <div class="column gap-24">
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold" data-i18n="course_program.block_8.lesson_1.title">
+                      Частина 1.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold" data-i18n="course_program.block_8.lesson_2.title">
+                      Частина 2.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold" data-i18n="course_program.block_8.lesson_3.title">
+                      Частина 3.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                  <div class="row gap-16">
+                    <img class="icon-md" src="/assets/icons/check.svg" alt="Check icon" />
+                    <span class="text-body-3 text-bold" data-i18n="course_program.block_8.lesson_4.title">
+                      Частина 4.
+                    </span>
+                  </div>
+
+                  <div class="divider"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course_program-flash"></div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="tariff relative">
+            <div class="column column__right">
+              <span class="text-headline-1 text-right" style="max-width: 1088px" data-i18n="tariff.title">
+                Обирай оптимальний варіант для твого швидкого старту
+              </span>
+            </div>
+
+            <div class="tariff__list">
+              <!-- <div class="tariff__card">
+                <div class="column gap-16">
+                  <span class="tariff__card-title" data-i18n="tariff.free.title">Безкоштовний</span>
+
+                  <span class="text-headline-1">$0</span>
+
+                  <div class="divider"></div>
+
+                  <ul class="tariff__card-list">
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.free.video">
+                      відеоуроки в загальному каналі твого потоку
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.free.chat">
+                      доступ до приватних каналу і чату потоку
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.free.test">
+                      різні тести і ДЗ в чат-боті
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.free.call">
+                      2 заплановані зідзвони з експертом у межах курсу
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  class="button button__secondary row__center"
+                  href="http://t.me/mustage_manager_support"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="tariff.price">Придбати</span></a
+                >
+              </div> -->
+
+              <div class="tariff__card">
+                <div class="column gap-16">
+                  <span class="tariff__card-title" data-i18n="tariff.start.title"> Стартовий </span>
+
+                  <span class="text-headline-1">$199</span>
+
+                  <div class="divider"></div>
+
+                  <ul class="tariff__card-list">
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.start.all_free">
+                      все, що входить у пакет «Безкоштовний»
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.start.dolphyn">
+                      тариф Pro на 300 профілів у Linken Sphere на місяць БЕЗКОШТОВНО
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.start.spay">
+                      спай Adheart на місяць безкоштовно
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.start.king">
+                      30 саморегів і 5 кінгів
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.start.creo">
+                      4 адаптації крео на ваш оффер
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.start.proxy">
+                      проксі в подарунок на місяць
+                    </li>
+                  </ul>
+                </div>
+
+                <a
+                  class="button button__secondary row__center"
+                  href="http://t.me/mustage_manager_support"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="tariff.price">Придбати</span></a
+                >
+              </div>
+
+              <div class="tariff__card">
+                <div class="column gap-16">
+                  <span class="tariff__card-title" data-i18n="tariff.base.title">Базовий</span>
+
+                  <span class="text-headline-1">$299</span>
+
+                  <div class="divider"></div>
+
+                  <ul class="tariff__card-list">
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.base.all_start">
+                      Усе, що входить у пакет «Безкоштовний» і «Стартовий»
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.base.auto_filling">
+                      автозалив на місяць БЕЗКОШТОВНО
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.base.keitaro">
+                      кейтаро на місяць після проходження курсу за необхідності
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.base.chat">
+                      доступ до ПРИВАТНОГО чату потоку з наставником і 2 додаткових зідзвони
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.base.sale">
+                      ЕКСКЛЮЗИВНІ ЗНИЖКИ на акаунти
+                    </li>
+                  </ul>
+                </div>
+
+                <a
+                  class="button button__secondary row__center"
+                  href="http://t.me/mustage_manager_support"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="tariff.price">Придбати</span></a
+                >
+              </div>
+
+              <div class="tariff__card">
+                <div class="column gap-16">
+                  <span class="tariff__card-title" data-i18n="tariff.pro.title">Pro</span>
+
+                  <span class="text-headline-1">$399</span>
+
+                  <div class="divider"></div>
+
+                  <ul class="tariff__card-list">
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.pro.all_base">
+                      Усе, що входить у пакет «Безкоштовний», «Стартовий» і «Цілеспрямований»
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.pro.proxy">
+                      проксі в подарунок на ДВА місяці
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.pro.spay">
+                      спай Adheart на ДВА місяці безкоштовно
+                    </li>
+                    <li class="tariff__card-list-item text-body-3" data-i18n="tariff.pro.call">
+                      1 ІНДИВІДУАЛЬНИЙ зідзвон із наставником
+                    </li>
+                  </ul>
+                </div>
+
+                <a
+                  class="button button__secondary row__center"
+                  href="http://t.me/mustage_manager_support"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="tariff.price">Придбати</span></a
+                >
+              </div>
+            </div>
+
+            <div class="row part-pay__wrapper">
+              <div class="part-pay" onclick="redirectToChatClick();">
+                <span class="text-body-2 text-bold text-underline">Можлива оплата частинами</span>
+
+                <div class="part-pay__icons">
+                  <img class="part-pay__icon" src="/assets/icons/Frame294.svg" alt="Privat bank" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame292.svg" alt="Monobank" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame293.svg" alt="A bank" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame295.svg" alt="OTP" />
+                  <img class="part-pay__icon" src="/assets/icons/Frame296.svg" alt="Image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tariff__flash"></div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="students-result relative">
+            <div class="row row__center">
+              <span class="text-headline-1 text-center" style="max-width: 1077px" data-i18n="students_result.title">
+                Подивись на результати наших учнів
+              </span>
+            </div>
+
+            <div class="students-result__content">
+              <div class="student__card-list">
+                <div class="students-result__card-wrapper">
+                  <img class="student__card-wrapper-image" src="/assets/images/image_1.webp" alt="Turkey image" />
+
+                  <div class="students-result__card">
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.geo">ГЕО:</span>
+                      <span data-i18n="turkey"> Турція </span>
+                    </span>
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span>
+                      31 рега/7 депов
+                    </span>
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span>
+                      23%
+                    </span>
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.period">Період заливу:</span>
+                      11.04.2024 - 26.04.2024
+                    </span>
+
+                    <img class="student__card-image" src="/assets/images/result_1.webp" alt="Turkey result" />
+                  </div>
+                </div>
+
+                <div class="students-result__card-wrapper">
+                  <img class="student__card-wrapper-image" src="/assets/images/image_2.webp" alt="Chile image" />
+
+                  <div class="students-result__card">
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.geo">ГЕО:</span>
+                      <span data-i18n="chile"> Чилі </span>
+                    </span>
+
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span>
+                      25 рег/5 депов
+                    </span>
+
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span>
+                      20%
+                    </span>
+
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.period">Період заливу:</span>
+                      20.07.2024 - 30.07.2024
+                    </span>
+
+                    <img class="student__card-image" src="/assets/images/result_2.webp" alt="Chile result" />
+                  </div>
+                </div>
+
+                <div class="students-result__card-wrapper">
+                  <img class="student__card-wrapper-image" src="/assets/images/image_3.webp" alt="Azerbaijan image" />
+
+                  <div class="students-result__card">
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.geo">ГЕО:</span>
+                      <span data-i18n="azerbaijan"> Азербайджан </span>
+                    </span>
+
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.statistic">Статистика:</span>
+                      113 рега/12 депов
+                    </span>
+
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.reg2dep">reg2dep:</span>
+                      11%
+                    </span>
+
+                    <span class="text-body-3">
+                      <span class="text-bold" data-i18n="students_result.period">Період заливу: </span>
+                      16.06.2024 - 24.07.2024
+                    </span>
+
+                    <img class="student__card-image" src="/assets/images/result_3.webp" alt="Azerbaijan result" />
+                  </div>
+                </div>
+              </div>
+
+              <span class="text-body-1" style="max-width: 930px" data-i18n="students_result.note">
+                Так, результати не захмарні, але для початку це дуже ОК. Навіть такі цифри потребують багато зусиль та
+                праці. Ти ж пам'ятаєш, що в нас немає чарівної кнопки «Бабло»?! Арбітраж трафіку – доволі непростий
+                шлях. Але ми безкоштовно навчимо тебе не здаватися, оперативно вирішувати проблеми, знаходити нові
+                лазівки та поступово примножувати свій успіх.
+              </span>
+            </div>
+
+            <div class="background-radial-gradient"></div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="slider relative">
+            <a name="feedback" class="slider__title text-headline-1" style="max-width: 1007px">
+              <span data-i18n="slider.title"> Читай відгуки про наш курс,</span>
+              <span class="text-primary" data-i18n="slider.student">98% учнів</span>
+              <span data-i18n="slider.remain">залишаються дуже</span>
+              <span class="text-primary" data-i18n="slider.happy">задоволеними</span>
+            </a>
+
+            <div class="column column__center gap-40">
+              <div class="column gap-24">
+                <div class="slider-2">
+                  <div class="slider-wrapper">
+                    <div class="slide">
+                      <img class="img" src="/assets/images/IMG_1431.webp" alt="Feedback 1" />
+                    </div>
+                    <div class="slide">
+                      <img class="img" src="/assets/images/IMG_1432.webp" alt="Feedback 2" />
+                    </div>
+                    <div class="slide">
+                      <img class="img" src="/assets/images/IMG_1433.webp" alt="Feedback 3" />
+                    </div>
+                    <div class="slide">
+                      <img class="img" src="/assets/images/IMG_1434.webp" alt="Feedback 4" />
+                    </div>
+                    <div class="slide">
+                      <img class="img" src="/assets/images/IMG_1436.webp" alt="Feedback 5" />
+                    </div>
+                    <div class="slide">
+                      <img class="img" src="/assets/images/IMG_1437.webp" alt="Feedback 6" />
+                    </div>
+                    <div class="slide">
+                      <img class="img" src="/assets/images/IMG_1438.webp" alt="Feedback 7" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__action">
+                  <button class="slider__button" onclick="moveToSlide(currentIndex - 1)" aria-label="Previos">
+                    <i class="fi fi-xs fi-sr-angle-left"></i>
+                  </button>
+
+                  <div class="slider__action-dot">
+                    <span class="dot" onclick="moveToSlide(6)"></span>
+                    <span class="dot" onclick="moveToSlide(7)"></span>
+                    <span class="dot" onclick="moveToSlide(8)"></span>
+                    <span class="dot" onclick="moveToSlide(9)"></span>
+                    <span class="dot" onclick="moveToSlide(10)"></span>
+                    <span class="dot" onclick="moveToSlide(11)"></span>
+                    <span class="dot" onclick="moveToSlide(12)"></span>
+                  </div>
+
+                  <button class="slider__button" onclick="moveToSlide(currentIndex + 1)" aria-label="Next">
+                    <i class="fi fi-xs fi-sr-angle-right"></i>
+                  </button>
+                </div>
+
+                <div id="modal" class="modal">
+                  <span class="modal__close">&times;</span>
+                  <img class="modal_content" id="modal-img" src="/assets/icons/arrow-right.svg" alt="Image" />
+                </div>
+              </div>
+
+              <div class="slider__pill">
+                <span class="text-body-1">
+                  <span data-i18n="slider.more">Переглянути більше відгуків можеш тут - </span>
+                  <a href="https://t.me/+M-Uvil3shJk2NTcy" class="link text-bold">https://t.me/+M-Uvil3shJk2NTcy</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="slider__gradient background-radial-gradient"></div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="answer">
+            <div class="column column__right">
+              <a name="faq" class="text-headline-1 text-right" style="max-width: 715px" data-i18n="answer.title">
+                Відповідаємо на часті запитання
+              </a>
+            </div>
+
+            <div class="answer__list">
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question1.title">З якими ГЕО будемо працювати?</span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question1.answer"
+                >
+                  Ти зможеш самостійно обирати ГЕО для роботи. Для новачків ми рекомендуємо починати з країн із менш
+                  жорсткою конкуренцією, що дозволить тобі швидше освоїтися та отримати перші результати. Ми допоможемо
+                  тобі обрати ГЕО залежно від твоїх цілей та рівня досвіду.
+                </span>
+              </div>
+
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question2.title">
+                    Коли я зможу вийти в + та почну отримувати перші прибутки?
+                  </span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question2.answer"
+                >
+                  Точної відповіді ми не маємо: все одно, що пальцем у небо. Все залежить від твоєї наполегливості та
+                  серйозного підходу до навчання. Ми надамо всі необхідні знання та інструменти, ти повинен одразу
+                  застосувати їх на практиці. Наш курс допоможе тобі скоротити шлях до бажаного заробітку, але не
+                  забувай, що легких грошей не буває.
+                </span>
+              </div>
+
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question3.title">
+                    На які креативи будемо заливати рекламу?
+                  </span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question3.answer"
+                >
+                  Ми навчимо тебе створювати ефективні технічні завдання для дизайнерів, що дозволить в результаті
+                  отримувати якісні крео точно під твої цілі. Креативи, розроблені нашими спецами, будуть приваблювати
+                  аудиторію і покращувати результати рекламних кампаній.
+                </span>
+              </div>
+
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question4.title">
+                    Чи зможу я бути частиною команди після завершення курсу?
+                  </span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question4.answer"
+                >
+                  Від нас ти отримаєш всі необхідні навички для ефективного заливу реклами та практичний досвід роботи.
+                  Якщо будеш старанно вчитися, виконувати всі домашні завдання і тести, проявляти активність у чаті, то
+                  після курсу потрапиш в наше закрите ком'юніті Mustage Friends, яке дасть купу переваг та можливостей.
+                </span>
+              </div>
+
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question5.title">
+                    Хто такі Mustage Team? Чим ваше навчання відрізняється від інших?
+                  </span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question5.answer"
+                >
+                  Mustage Team – це команда професіоналів з чесним та відкритим підходом до навчання. Ми не обіцяємо
+                  легких грошей або миттєвих результатів, а націлені на те, щоб показати тобі реальний світ арбітражу.
+                  Наш курс побудований на практичному досвіді та реальних кейсах, а не на маркетингових «казках», що
+                  продають ілюзії.
+                </span>
+              </div>
+
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question6.title">
+                    Скільки $ потрібно для старту?
+                  </span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question6.answer"
+                >
+                  Для успішного старту тобі знадобиться мінімум 200$. Це дасть тобі змогу створити перші кампанії та
+                  отримати досвід без великих ризиків і розчарувань. Але будь готовим і до можливих мінусів. Пробувати
+                  заливати на гемблу за останні 100$ не варіант.
+                </span>
+              </div>
+
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question7.title">
+                    Чи потрібні якісь технічні навички для успішного проходження курсу?
+                  </span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question7.answer"
+                >
+                  Достатньо вміти користуватися комп'ютером та інтернетом. Ми почнемо з основ і поступово будемо вивчати
+                  більш складні аспекти, тому спеціальних технічних навичок не потрібно. Головне – це бажання вчитися і
+                  прагнення до успіху.
+                </span>
+              </div>
+
+              <div class="answer__card expanded">
+                <div class="expanded__header answer__card-title">
+                  <span class="text-headline-3" data-i18n="answer.question8.title">
+                    Чому курс безкоштовний, який вам від цього сенс?
+                  </span>
+                  <i class="fi fi-sr-angle-small-down expanded__icon"></i>
+                </div>
+
+                <span
+                  class="expanded__content answer__card-description text-body-3"
+                  data-i18n="answer.question8.answer"
+                >
+                  Нам вигідно якісно навчити тебе заливу реклами, оскільки зараз наша команда розбудовує професійне
+                  ком'юніті, з яким планує працювати в майбутньому. Окрім того, ти будеш заливати на довірені
+                  партнерські програми, від яких ми отримуємо свій %. Тож у разі твого успішного навчання у виграші
+                  будуть всі.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="spinner__wrapper">
+          <div class="spinner__content">
+            <div class="column column__center gap-16">
+              <div class="deal-wheel">
+                <button class="btn-spin">
+                  <span class="text-primary--gradient" data-i18n="spinner.button">Отримай бонус!</span>
+                </button>
+
+                <ul class="spinner"></ul>
+
+                <img class="ticker" src="/assets/images/triangle.svg" alt="Ticker" />
+              </div>
+
+              <span class="text-headline-3" data-i18n="spinner.note">
+                * один із сервісів, до якого надаємо доступ на вибір
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section class="register__wrapper relative">
+          <div class="register relative">
+            <span class="text-headline-1" style="max-width: 898px" data-i18n="register.title">
+              Залишились питання? Заповнюй форму, ми відповімо протягом 30 хвилин.
+            </span>
+
+            <div class="column gap-40" style="z-index: 1">
+              <form id="register_form" class="register__form">
+                <div class="register__form-content">
+                  <span class="text-headline-3 text-center" data-i18n="register.form_title">Форма</span>
+                  <div class="divider"></div>
+                  <div data-i18n="errorMessages.sendError" id="form-error" class="error-message">
+                    Помилка під час відправки форми, зверніться до сапорта @mustage_manager_support
+                  </div>
+
+                  <div class="column gap-8">
+                    <label for="username" class="text-body-3" data-i18n="register.name">Введіть ім'я</label>
+                    <div class="form__input-wrapper">
+                      <input
+                        required
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Ім'я"
+                        class="form__input"
+                        autocomplete="name"
+                      />
+                    </div>
+                    <div data-i18n="errorMessages.name" id="username-error" class="error-message">
+                      Ім'я не може бути довшим за 100 символів
+                    </div>
+                  </div>
+
+                  <div class="column gap-8">
+                    <label for="phone" class="text-body-3" data-i18n="register.phone">Введіть номер телефону</label>
+                    <div class="form__input-wrapper">
+                      <input
+                        required
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        placeholder="+ 38 000 00 00 000"
+                        class="form__input"
+                        autocomplete="tel"
+                      />
+                    </div>
+                    <div data-i18n="errorMessages.phone" id="phone-error" class="error-message">
+                      Номер телефону повинен бути у форматі +38XXXXXXXXXX
+                    </div>
+                  </div>
+
+                  <div class="column gap-8">
+                    <label for="nickname" class="text-body-3" data-i18n="register.tg">Введіть нікнейм у Телеграм</label>
+                    <div class="form__input-wrapper">
+                      <input
+                        required
+                        type="text"
+                        id="nickname"
+                        name="nickname"
+                        placeholder="@nickname"
+                        class="form__input"
+                      />
+                    </div>
+                    <div data-i18n="errorMessages.nick" id="nickname-error" class="error-message">
+                      Нікнейм має бути у форматі @nickname і довжиною від 3 до 32 символів
+                    </div>
+                  </div>
+                </div>
+
+                <button id="register" class="button button__secondary row__center" type="submit">
+                  <span class="button-text" data-i18n="register.register">Зареєструватися</span>
+                  <span class="loader hidden"></span>
+                </button>
+              </form>
+
+              <div class="register__social">
+                <a href="https://t.me/mustage_channel">
+                  <img class="icon-lg" src="/assets/icons/telegram.svg" alt="Telegram" />
+                </a>
+
+                <a href="https://www.youtube.com/@usaffiliate">
+                  <img class="icon-lg" src="/assets/icons/youtube.svg" alt="Youtube" />
+                </a>
+
+                <a href="https://www.tiktok.com/@mustage.io">
+                  <img class="icon-lg" src="/assets/icons/tiktok.svg" alt="Tiktok" />
+                </a>
+              </div>
+            </div>
+
+            <img class="register__logo" src="/assets/images/logo-icon.svg" alt="Logo" />
+          </div>
+
+          <div class="register__flash"></div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer__wrapper">
+      <div class="footer">
+        <div class="footer__content">
+          <div class="column justify-content-between gap-24">
+            <div class="column gap-24" style="align-items: flex-start">
+              <img src="/assets/images/logo.svg" style="width: 208px; height: 56px" alt="Mustage logo" />
+
+              <button class="button button__rounded" onclick="redirectToChatClick();">
+                <span data-i18n="header.write_to_us">Написать нам</span>
+                <img src="/assets/icons/paper-plane.svg" alt="Paper plane icon" style="width: 38px; height: 38px" />
+              </button>
+            </div>
+
+            <div class="footer__language">
+              <img class="icon-md" src="/assets/icons/translation.svg" alt="Translate icon" />
+              <button id="footer_ru" class="button button__ghost" onclick="changeLanguage('ru')">RU</button>
+              <button id="footer_uk" class="button button__ghost button__ghost--active" onclick="changeLanguage('uk')">
+                UA
+              </button>
+            </div>
+          </div>
+
+          <nav class="column" style="gap: 56px">
+            <div class="column gap-24">
+              <span class="text-body-3 text-bold footer__nav-title" data-i18n="nav.title">Меню</span>
+
+              <div class="column gap-16">
+                <a href="#advantage" class="nav__footer-link" data-i18n="nav.advantage">Переваги</a>
+                <a href="#about" class="nav__footer-link" data-i18n="nav.about">Про нас</a>
+                <a href="#program" class="nav__footer-link" data-i18n="nav.program">Програма</a>
+                <a href="#feedback" class="nav__footer-link" data-i18n="nav.reviews">Відгуки</a>
+                <a href="#faq" class="nav__footer-link" data-i18n="nav.faq">FAQ</a>
+              </div>
+            </div>
+
+            <a href="/terms.html" class="nav__footer-link" data-i18n="nav.license">Публічна оферта</a>
+          </nav>
+        </div>
+
+        <div class="footer__social">
+          <div class="footer__social-content">
+            <a href="https://t.me/mustage_channel">
+              <img class="icon-lg" src="/assets/icons/telegram.svg" alt="Telegram" />
+            </a>
+
+            <a href="https://www.youtube.com/@usaffiliate">
+              <img class="icon-lg" src="/assets/icons/youtube.svg" alt="Youtube" />
+            </a>
+
+            <a href="https://www.tiktok.com/@mustage.io">
+              <img class="icon-lg" src="/assets/icons/tiktok.svg" alt="Tiktok" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <script src="/config.js"></script>
+    <script src="/assets/scripts/i18n.js"></script>
+    <script src="/assets/scripts/slider.js"></script>
+    <script src="/assets/scripts/index.js"></script>
+    <script src="/assets/scripts/message-utils.js"></script>
+    <script src="/assets/scripts/price-utils.js"></script>
+  </body>
+</html>

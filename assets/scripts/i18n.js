@@ -26,6 +26,11 @@ const activeUkLanguage = () => {
   menuUk?.classList.add("button__ghost--active");
 };
 
+const urlPath = window.location.pathname;
+// Визначаємо валюту та ключ ціни
+const currencySymbol = urlPath.startsWith("/ua") ? "грн" : "$";
+const currencyKey = urlPath.startsWith("/ua") ? "Price" : "Price_USD";
+
 const setLanguage = (lang) => {
   switch (lang) {
     case "uk":
@@ -52,10 +57,8 @@ function changeLanguage(lang) {
 
   i18next.changeLanguage(lang, () => {
     $("#username").attr("placeholder", $.t("register.short_name"));
-    fetchDisplayedPrice().then(({ currencySymbol, currencyKey }) => {
-      fetchConsumablesData(currencySymbol, currencyKey);
-      fetchTariffsData(currencySymbol, currencyKey);
-    });
+    fetchConsumablesData(currencySymbol, currencyKey);
+    fetchTariffsData(currencySymbol, currencyKey);
     rerender();
   });
 }
