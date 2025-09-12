@@ -1630,17 +1630,19 @@
               </div>
             </div>
 
-            <div class="row part-pay__wrapper">
-              <div class="part-pay" onclick="redirectToChatClick();">
+            <div class="part-pay__wrapper" onclick="redirectToChatClick();">
+              <div class="part-pay">
                 <span class="text-body-2 text-bold text-underline">Можлива оплата частинами</span>
 
                 <div class="part-pay__icons">
                   <img class="part-pay__icon" src="/assets/icons/Frame294.svg" alt="Privat bank" />
-                  <img class="part-pay__icon" src="/assets/icons/Frame292.svg" alt="Monobank" />
                   <img class="part-pay__icon" src="/assets/icons/Frame293.svg" alt="A bank" />
                   <img class="part-pay__icon" src="/assets/icons/Frame295.svg" alt="OTP" />
                   <img class="part-pay__icon" src="/assets/icons/Frame296.svg" alt="Image" />
                 </div>
+              </div>
+              <div class="part-pay-mono_wrap">
+                <img class="part-pay__mono" src="/assets/images/mono.webp" alt="Mono Image" />
               </div>
             </div>
 
@@ -2138,6 +2140,17 @@
             </div>
 
             <a href="/terms.html" class="nav__footer-link" data-i18n="nav.license">Публічна оферта</a>
+          </nav>
+          <nav class="column" style="gap: 56px">
+            <div class="column gap-24">
+              <span class="text-body-3 text-bold footer__nav-title" data-i18n="nav.other">Інше</span>
+
+              <div class="column gap-16">
+                <a id="payment-link" target="_blank" href="" class="nav__footer-link" data-i18n="nav.payInfo"
+                  >Інформація про оплату</a
+                >
+              </div>
+            </div>
           </nav>
         </div>
 

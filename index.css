@@ -1755,19 +1755,36 @@ body {
   gap: 32px;
 }
 
-.part-pay {
-  display: flex;
-  align-items: center;
-  padding: 16px 32px;
-  gap: 40px;
+.part-pay-mono_wrap {
+  position: relative;
+  width: 100%;
+  max-width: 665px;
+}
+
+.part-pay__mono {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.part-pay__wrapper {
+  max-width: 665px;
   border-radius: 24px;
   background: #f7f7f726;
   border: 1px solid #f7f7f7;
   transition: all 300ms ease-out;
   cursor: pointer;
+  padding: 16px 32px;
 }
 
-.part-pay:hover {
+.part-pay {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+
+.part-pay__wrapper:hover {
   background: #f7f7f73b;
 }
 
@@ -2545,17 +2562,13 @@ body {
     line-height: 19.5px;
   }
 
-  .part-pay__wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
   .part-pay {
     flex-direction: column;
     align-items: center;
     padding: 16px 24px;
     gap: 24px;
     border-radius: 24px;
+    margin-bottom: 0px;
   }
 
   .part-pay__icons {

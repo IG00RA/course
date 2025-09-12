@@ -26,6 +26,17 @@ const activeUkLanguage = () => {
   menuUk?.classList.add("button__ghost--active");
 };
 
+function updatePaymentLinks(lang) {
+  const link = document.getElementById("payment-link");
+
+  link.href = lang === "ru" ? "/payment_info_ru.html" : "/payment_info.html";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lang = localStorage.getItem("i18nextLng") || "uk";
+  updatePaymentLinks(lang);
+});
+
 const urlPath = window.location.pathname;
 // Визначаємо валюту та ключ ціни
 const currencySymbol = urlPath.startsWith("/ua") ? "грн" : "$";
@@ -46,6 +57,7 @@ const setLanguage = (lang) => {
       document.documentElement.lang = "uk";
       break;
   }
+  updatePaymentLinks(lang);
 };
 
 const rerender = () => {
@@ -78,6 +90,8 @@ $(async function () {
               sendError: "Помилка під час відправки форми, зверніться до сапорта @mak_simuch",
             },
             nav: {
+              other: "Інше",
+              payInfo: "Інформація про оплату",
               title: "Меню",
               advantage: "Переваги",
               about: "Про нас",
@@ -672,6 +686,8 @@ $(async function () {
               sendError: "Ошибка при отправке формы, обратитесь в поддержку @mak_simuch",
             },
             nav: {
+              other: "Другое",
+              payInfo: "Информация об оплате",
               title: "Меню",
               advantage: "Преимущества",
               about: "О нас",
