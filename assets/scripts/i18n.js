@@ -28,8 +28,10 @@ const activeUkLanguage = () => {
 
 function updatePaymentLinks(lang) {
   const link = document.getElementById("payment-link");
+  const termsLink = document.getElementById("terms-link");
 
   link.href = lang === "ru" ? "/payment_info_ru.html" : "/payment_info.html";
+  termsLink.href = lang === "ru" ? "/terms_ru.html" : "/terms.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
