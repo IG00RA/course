@@ -32,28 +32,53 @@ function fetchConsumablesData(currencySymbol, currencyKey) {
 
       const nameSeparator = storedLang.includes("ru") ? " и " : " і ";
 
-      document.querySelectorAll(".calculate__list-item").forEach((item) => {
-        const pillSpan = item.querySelector(".calculate__pill span[data-i18n]");
-        const priceSpan = item.querySelector(".calculate__pill").nextElementSibling;
+      document.querySelectorAll(".calculate__list-item").forEach((itemEl) => {
+        const pillSpan = itemEl.querySelector(".calculate__pill span[data-i18n]");
+        const priceSpan = itemEl.querySelector(".calculate__pill").nextElementSibling;
+        const iconContainer = itemEl.querySelector(".calculate__pill");
+
         if (pillSpan && priceSpan) {
           const i18nKey = pillSpan.getAttribute("data-i18n");
           if (mapping[i18nKey]) {
             const keys = mapping[i18nKey].keys;
             let names = [];
             let prices = [];
+            let foundIconUrl = null;
+
             keys.forEach((k) => {
-              if (dataByKey[k]) {
-                names.push(dataByKey[k].Name);
-                prices.push(formatPrice(dataByKey[k][currencyKey] || dataByKey[k].Price, currencySymbol));
+              const itemData = dataByKey[k];
+              if (itemData) {
+                names.push(itemData.Name);
+                prices.push(formatPrice(itemData[currencyKey] || itemData.Price, currencySymbol));
+
+                if (itemData.icon && itemData.icon.url) {
+                  foundIconUrl = `https://${BACK_HOST}${itemData.icon.url}`;
+                }
               }
             });
+
             if (names.length === 0) {
-              item.style.display = "none";
+              itemEl.style.display = "none";
               return;
             }
 
             pillSpan.textContent = names.join(nameSeparator);
             priceSpan.textContent = prices.join(" + ");
+
+            if (foundIconUrl) {
+              const existingImg = iconContainer.querySelector("img, i");
+              const newImg = document.createElement("img");
+              newImg.className = existingImg?.className || "calculate__icon";
+              newImg.src = foundIconUrl;
+              newImg.alt = names.join(", ");
+              newImg.loading = "lazy";
+
+              if (existingImg) {
+                existingImg.replaceWith(newImg);
+              } else {
+                iconContainer.insertBefore(newImg, pillSpan);
+              }
+            }
           }
         }
       });
