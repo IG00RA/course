@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const urlPath = window.location.pathname;
-// Визначаємо валюту та ключ ціни
 const currencySymbol = urlPath.startsWith("/ua") ? "грн" : "$";
 const currencyKey = urlPath.startsWith("/ua") ? "Price" : "Price_USD";
 
@@ -566,6 +565,7 @@ $(async function () {
                 call: "1 ІНДИВІДУАЛЬНИЙ зідзвон із наставником",
               },
               price: "Придбати",
+              partPay: "Можлива оплата частинами",
             },
 
             students_result: {
@@ -1164,6 +1164,7 @@ $(async function () {
                 call: "1 Индивидуальный созвон с наставником",
               },
               price: "Купить",
+              partPay: "Возможна оплата по частям",
             },
 
             students_result: {
@@ -1286,6 +1287,6 @@ $(async function () {
       await jqueryI18next.init(i18next, $, { useOptionsAttr: true });
       rerender();
       setLanguage(i18next.language);
-    }
+    },
   );
 });
